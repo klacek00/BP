@@ -1,0 +1,112 @@
+%% Created by Maple 2021.2, Windows 10
+%% Source Worksheet: Caputo.mw
+%% Generated: Tue May 23 03:03:03 CEST 2023
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{maple}
+%\usepackage[utf8]{inputenc}
+\usepackage[svgnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{textcomp}
+\begin{document}
+	\lstset{basicstyle=\ttfamily,breaklines=true,columns=flexible}
+	\pagestyle{empty}
+	\DefineParaStyle{Maple Bullet Item}
+	\DefineParaStyle{Maple Heading 1}
+	\DefineParaStyle{Maple Warning}
+	\DefineParaStyle{Maple Heading 4}
+	\DefineParaStyle{Maple Heading 2}
+	\DefineParaStyle{Maple Heading 3}
+	\DefineParaStyle{Maple Dash Item}
+	\DefineParaStyle{Maple Error}
+	\DefineParaStyle{Maple Title}
+	\DefineParaStyle{Maple Ordered List 1}
+	\DefineParaStyle{Maple Text Output}
+	\DefineParaStyle{Maple Ordered List 2}
+	\DefineParaStyle{Maple Ordered List 3}
+	\DefineParaStyle{Maple Normal}
+	\DefineParaStyle{Maple Ordered List 4}
+	\DefineParaStyle{Maple Ordered List 5}
+	\DefineCharStyle{Maple 2D Output}
+	\DefineCharStyle{Maple 2D Input}
+	\DefineCharStyle{Maple Maple Input}
+	\DefineCharStyle{Maple 2D Math}
+	\DefineCharStyle{Maple Hyperlink}
+	\begin{center}
+		\begin{Maple Normal}
+			\underline{\textbf{Caputo's derivative}}
+		\end{Maple Normal}
+	\end{center}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{restart} ; $}
+	\end{Maple Normal}
+	\begin{Maple Normal}
+		
+	\end{Maple Normal}
+	\begin{Maple Normal}
+		{$ \displaystyle J \coloneqq (a ,n ,f ,x)\rightarrow \mathit{int} (f ,t =a ..x); $}
+	\end{Maple Normal}
+	% \mapleresult
+	\begin{dmath}\label{(1)}
+		J \coloneqq \left(a ,n ,f ,x \right)\hiderel{\mapsto }\int_{a}^{x}f d t 
+	\end{dmath}
+	\begin{Maple Normal}
+		
+	\end{Maple Normal}
+	\begin{Maple Normal}
+		
+	\end{Maple Normal}
+	\begin{Maple Normal}
+		{$ \displaystyle f \coloneqq x \rightarrow x ;
+			\\
+			$}
+	\end{Maple Normal}
+	% \mapleresult
+	\begin{dmath}\label{(2)}
+		f \coloneqq x \hiderel{\mapsto }x 
+	\end{dmath}
+	\begin{Maple Normal}
+		{$ \displaystyle J (0,1,f (t),x); $}
+	\end{Maple Normal}
+	% \mapleresult
+	\begin{dmath}\label{(3)}
+		\frac{x^{3}}{3}
+	\end{dmath}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{CD} \coloneqq (\mathit{alfa} ,a ,f ,x)\rightarrow \frac{1}{\mathrm{GAMMA}(-\mathit{alfa} +\mathrm{ceil}(\mathit{alfa}))}\cdot \mathit{int} (\frac{\mathit{diff} (f ,t \$ \mathrm{ceil}(\mathit{alfa}))}{(x -t)^{\mathit{alfa} +1-\mathrm{ceil}(\mathit{alfa})}},t =a ..x); $}
+	\end{Maple Normal}
+	% \mapleresult
+	\begin{dmath}\label{(4)}
+		\mathit{CD} \coloneqq \left(\mathit{alfa} ,a ,f ,x \right)\rightarrow \frac{\int_{a}^{x}\frac{\frac{\partial^{\mathrm{ceil}\left(\mathit{alfa} \right)}}{\partial t^{\mathrm{ceil}\left(\mathit{alfa} \right)}} f}{\left(x -t \right)^{\mathit{alfa} +1-\mathrm{ceil}\left(\mathit{alfa} \right)}}d t}{\mathrm{GAMMA}\! \left(-\mathit{alfa} +\mathrm{ceil}\! \left(\mathit{alfa} \right)\right)}
+	\end{dmath}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{CD} ( 0.5,0,f (t),x) $}
+	\end{Maple Normal}
+	% \mapleresult
+	\begin{dmath}\label{(5)}
+		1.504505556 x^{\frac{3}{2}}
+	\end{dmath}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{plot} (\% ,x =0..2) $}
+	\end{Maple Normal}
+	% \mapleresult
+	\mapleplot{Caputoplot2d1.png}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{plot} ([\mathit{CD} ( 0.1\cdot j ,0,f (t),x)\$ j =1..9],x =0..5) $}
+	\end{Maple Normal}
+	% \mapleresult
+	\mapleplot{Caputoplot2d2.png}
+	\begin{Maple Normal}
+		{$ \displaystyle \mathit{plot} ([\mathit{CD} ( 0.2\cdot j ,2,f (t),x)\$ j =1..9],x =0..5) $}
+	\end{Maple Normal}
+	% \mapleresult
+	\mapleplot{Caputoplot2d3.png}
+	\begin{Maple Normal}
+		
+	\end{Maple Normal}
+\end{document}

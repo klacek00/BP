@@ -1,0 +1,366 @@
+\documentclass[a4paper,12pt,twoside]{article}
+\usepackage[czech]{babel}    
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.97]{XCharter} 
+\usepackage[libertine,bigdelims,vvarbb,scaled=1.05]{newtxmath} 
+\usepackage[spacing=true,kerning=true,babel=true,tracking=true]{microtype}
+\usepackage[hang, small, labelfont=bf, up]{caption}
+\usepackage{booktabs} 
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\definecolor{vutmodra}{RGB}{0,79,113}
+\definecolor{modra1}{RGB}{22,65,87}
+\definecolor{vutcervena}{RGB}{228,0,43}
+\usepackage{avant}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\sffamily\Large\bfseries\color{vutmodra}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\large\bfseries\color{vutcervena}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\sffamily\normalsize\bfseries\color{vutcervena}}{\thesubsubsection}{1em}{}
+
+%\allsectionsfont{\normalfont\sffamily\bfseries\color{vutmodra}} % Change the font of all section
+
+%%% Menší vertikální mezery v seznamu literatury %%%
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{3pt plus 0.3ex}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\openbox\undefined
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsthm}
+\usepackage{amsmath,latexsym}
+\usepackage{graphicx}
+\DeclareGraphicsRule{*}{eps}{*}{}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt}
+\setlist[enumerate]{noitemsep, topsep=2pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lipsum} 
+\usepackage{fancyhdr}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{a4paper,textwidth=16cm,textheight=25cm,
+    top=1.25cm, % Top margin
+	inner=2.5cm,
+    %bottom=1.5cm, % Bottom margin
+	left=2cm, % Left margin
+	right=2cm, % Right margin
+	includehead, % Include space for a header
+	%includefoot, % Include space for a footer
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{veta}{Věta}[section]
+\newtheorem{dusl}[veta]{Důsledek}
+\newtheorem{lem}[veta]{Lemma}
+\newtheorem{prop}[veta]{Proposition}
+
+
+\theoremstyle{definition}
+\newtheorem{defin}[veta]{Definice}
+\newtheorem{problem}[veta]{Problem}
+\newtheorem{prikl}[veta]{Příklad}
+
+
+\theoremstyle{remark}
+\newtheorem*{pozn}{Poznámka}
+
+%% Styl číslování rovnic a obrázků %%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\allowdisplaybreaks
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\renewcommand{\le}[1]{\left #1}
+\newcommand{\ri}[1]{\right #1}
+\newcommand{\dx}[1]{\mathrm{d} #1}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\lapl}[1]{\mathcal{L}\{#1\}(s)}
+\DeclareMathOperator{\tg}{\mathrm{tg}}
+\DeclareMathOperator{\cotg}{\mathrm{cotg}}
+
+
+\newcommand{\tflarge}{\normalfont\sffamily\large\textmd}
+\newcommand{\tfLarge}{\normalfont\sffamily\Large\textmd}
+\newcommand{\tfsmall}{\normalfont\sffamily\small\textmd}
+\newcommand{\tfnormal}{\normalfont\sffamily\normalsize\textmd}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\thispagestyle{empty}
+\noindent
+\parbox[c]{4.2cm}{\includegraphics[width=4cm]{VUT.pdf}}
+\parbox[c][1.5cm][t]{10cm}{\tflarge{VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ}\\[0mm]\tfsmall{BRNO UNIVERSITY OF TECHNOLOGY}}
+
+\vspace{1cm}\noindent
+\parbox[c]{4.2cm}{\includegraphics[width=4cm]{FSI.pdf}}
+\parbox[c][1.65cm][t]{10cm}{\tflarge{FAKULTA STROJNÍHO INŽENÝRSTVÍ}\\
+\tfsmall{FACULTY OF MECHANICAL ENGINEERING}\\[3mm]
+\tflarge{ÚSTAV MATEMATIKY}\\
+\tfsmall{INSTITUTE OF MATHEMATICS}
+}
+
+\vspace{4cm}\noindent
+{\normalfont\sffamily\Large\textmd{NÁZEV PRÁCE\\[2mm] 
+		POKRAČOVÁNÍ NÁZVU PRÁCE}}
+\\[5mm]
+{\normalfont\sffamily\textmd{TITLE OF THE THESIS\\[0.5mm] CONTINUATION OF THE TITLE}}
+
+\vspace{5cm}\noindent
+{\tflarge{BAKALÁŘSKÁ PRÁCE}}\\
+{\tfsmall{BACHELOR'S THESIS}}
+
+\vspace{1cm}\noindent
+\parbox[t]{7.2cm}{\tflarge{AUTOR PRÁCE}\\ \tfsmall{AUTHOR}}\parbox[b]{5cm}{\tflarge{JMÉNO PŘÍJMENÍ}}
+
+\vspace{1cm}\noindent
+\parbox[t]{7.2cm}{\sf \large VEDOUCÍ PRÁCE\\ \small SUPERVISOR}\parbox[b]{8.3cm}{\sf \large doc. Ing. JMÉNO PŘÍJMENÍ, Ph.D.}
+
+\vspace{3.2cm}\noindent
+{\sf BRNO 2022}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{empty}
+\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\noindent
+{\bf Abstrakt}\\[1mm]
+Abstrakt česky...
+
+\vspace{1cm}\noindent
+{\bf Abstract}\\[1mm]
+English abstract...
+
+\vspace{1cm}
+\noindent
+{\bf Klíčová slova}\\
+Klíčové slovo 1, klíčové slovo 2, ...
+
+\vspace{1cm}
+\noindent
+{\bf Keywords}\\
+keyword 1, keyword 2,...
+
+\vfill\noindent
+Příjmení, J.: {\it Název práce}, Brno: Vysoké učení technické v Brně, Fakulta strojního inženýrství, 2023. xx s. Vedoucí bakalářské práce doc. Ing. Jméno školitele, Ph.D.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+
+\
+
+\vspace{15cm}\noindent Prohlašuji, že jsem bakalářskou práci {\it
+Název název název} vypracoval samostatně pod
+vedením doc. Ing. Jméno školitele, Ph.D. s použitím materiálů uvedených
+v seznamu literatury.
+
+\vspace{1cm}
+\hfill{Jméno autora}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{empty}
+
+\
+
+\vspace{18cm}\noindent Zde stručné poděkování (školiteli, rodině, osobě blízké, apod.). 
+
+\vspace{1cm}
+\hfill{Jméno Příjmení}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagestyle{fancy}
+\setlength{\headheight}{13.78807pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection~  #1}{} }
+\fancyhead[LO,RE]{\small\textit{\nouppercase{\leftmark}}}
+\fancyhead[LE,RO]{\small\thepage}
+\fancyfoot[LE,RO]{\empty}
+\fancyfoot[CE,CO]{\empty}
+
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Úvod}
+\lipsum[1-8]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sekce}
+
+\subsection{Limita funkce}
+\begin{defin}[limity funkce]
+Řekneme, že funkce $f$ má v bodě $x_0\in\R^\ast$ \textit{limitu} $a\in\R^\ast$ a píšeme $\lim_{x\to x_0}
+f(x)=a$, jestliže ke každému okolí $O(a)$ existuje ryzí okolí $O^\ast(x_0)$ takové, že pro každé $x\in O^\ast(x_0)$ je $f(x)\in O(a)$.
+\end{defin}
+\begin{pozn}
+a) Definice zahrnuje 4 případy: je-li $x_0,a\in\R$, hovoříme o \textit{vlastní limitě ve vlastním bodě}, je-li 
+$x_0=\pm\infty$, $a\in\R$, hovoříme o \textit{vlastní limitě v nevlastním bodě}, je-li $x\in\R$, $a=\pm\infty$, hovoříme o \textit{nevlastní limitě ve vlastním bodě} a~je-li $x_0=\pm\infty$ a $a=\pm\infty$, hovoříme o \textit{nevlastní limitě v nevlastním bodě}. 
+
+b) V definici se hovoří o ryzím okolí bodu $x_0$, nevyskytuje se tedy žádný požadavek na $f(x_0)$. 
+Existence a hodnota $\lim_{x\to x_0}f(x)$ nezávisí na tom,
+zda $x_0\in D(f)$, a pokud ano, tak nezávisí na hodnotě $f(x_0)$.
+Existuje-li však $\lim_{x\to x_0}f(x)$, musí být funkce $f$ definována v nějakém ryzím okolí bodu $x_0$.
+\end{pozn}
+\begin{prikl}
+Ukažte, že $\lim_{x\to 0}f(x)=0$, kde $f(x)=\begin{cases}x^2&\text{ pro }x\ne0,\\
+1&\text{ pro }x=0.\end{cases}$
+\end{prikl}
+\noindent
+{\it Řešení.}
+Nechť $\ep>0$ je libovolné. Potom $\forall x\in O^\ast_\delta(0)$, kde $\delta=\sqrt{\ep}$, platí $|x^2-0|=x^2<\delta^2=\ep$.
+\begin{veta}[Heineho\footnote{Heinrich Eduard Heine 1821--1881, Němec} podmínka]\label{v:heine}
+Funkce $f$ má v~bodě $x_0\in\R^\ast$ limitu $a\in\R^\ast$ $\Leftrightarrow$ pro každou posloupnost $\{x_n\}_{n=1}^\infty\subseteq D(f)$
+takovou, že $\lim_{n\to\infty}x_n=x_0$, přičemž $x_n\ne x_0$ $\forall n\in\N$, platí\/
+$\lim_{n\to\infty}f(x_n)=a$.
+\end{veta}
+\begin{proof}
+\uv{$\Rightarrow$} Nechť $\lim_{x\to x_0}f(x)=a\in\R^\ast$ a $\{x_n\}$ je posloupnost splňující předpoklady. Buď $O(a)$ libovolné. Pak existuje ryzí okolí $O^\ast(x_0)$ takové, že pro $x\in O^\ast(x_0)$ je $f(x)\in O(a)$.
+Poněvadž $x_n\to x_0$, $x_n\ne x_0$, existuje $n_0\in\N$ takové, že pro $n\geq n_0$ platí $x_n\in O^*(x_0)$ a tedy
+$f(x_n)\in O(a)$, což znamená, že $\lim_{n\to\infty}f(x_n)=a$.
+
+\vskip1mm
+\uv{$\Leftarrow$} 
+Předpokládejme, že pro každou $\{x_n\}$, takovou, že $x_n\to x_0$, $x_n\ne x_0$, platí 
+$\lim_{n\to\infty}f(x_n)= a\in\R^\ast$. Ukážeme, že $\lim_{x\to x_0}f(x)=a$.
+Připusťme, že existuje $O(a)$ takové, že v každém ryzím okolí $O^\ast(x_0)$ existuje $x$ takové, že $f(x)\notin O(a)$. Je-li $x_0\in\R$ (resp. $x_0=\infty$, resp. $x_0=-\infty$), položíme $U_n(x_0) =(x_0-\frac{1}{n},x_0+\frac{1}{n})\setminus\{x_0\}$ (resp. $U_n(x_0)=(n,\infty)$, resp. $U_n(x_0)=(-\infty,-n)$). Pro libovolné $n\in\N$ existuje $y_n\in U_n(x_0)$ takové, že $f(y_n)\notin O(a)$. Z~konstrukce $U_n(x_0)$ plyne, že
+$y_n\to x_0$, $y_n\ne x_0$ a~tedy $\lim_{n\to\infty}f(y_n)=a$. To ale není 
+možné, protože $f(y_n)\notin O(a)$.
+\end{proof}
+
+\subsubsection*{Základní limity}
+\begin{enumerate}[leftmargin=*]
+\item Nechť $f(x)=c\in\R$ pro každé $x\in\R$. Pak pro každé $x_0\in\R^\ast$ je 
+$\lim_{x\to x_0}f(x)=c$.
+\item Buď $P$ polynom. Pak pro libovolné $x_0\in\R$ je $\lim_{x\to x_0}P(x)=P(x_0)$.
+\item Buď $R$ racionální lomená funkce a $x_0\in D(R)$. Pak 
+$\lim_{x\to x_0}R(x) = R(x_0)$.
+\item Buď $a>0$, $f(x) = a^x$. Pak pro libovolné $x_0\in\R$ je  $\lim_{x\to x_0}
+a^x = a^{x_0}$.
+\item Buď $a\in\R$, $f(x)=x^a$. Pak pro libovolné $x_0>0$ je $\lim_{x\to x_0}x^a=x^a_0$.
+\item Pro libovolné $x_0\in\R$ je $\lim_{x\to x_0}\sin x=\sin x_0$, 
+$\lim_{x\to x_0}\cos x=\cos x_0$.
+\item $\lim_{x\to 0}\frac{\sin x}{x}=1$, $\lim_{x\to\infty}\bigl(1+\frac{1}{x}\bigr)^x=\e$, $\lim_{x\to 0}\frac{1-\cos x}{x^2}=\frac{1}{2}$, 
+%\item $\lim_{x\to 0}\frac{\e^x-1}{x}=1$.
+\end{enumerate}
+
+\subsubsection*{Tabulky}
+U tabulek se dělají popisky (příkaz \verb!\caption!) nad tabulkou. Za popiskem tabulky nebo obrázku se nedělá tečka. Typografie velí, že lépe je nepoužívat svislé čáry.
+\begin{table}[h!]
+	\centering
+	\caption{Laplaceova transformace vybraných funkcí}\label{tab1}
+	\begin{tabular}{cc}
+		\toprule
+		$f(x),\ x\geq 0$ & $\lapl{f}$\\\midrule
+		$1$ & $\displaystyle\frac{1}{s}\,,\ \mathrm{Re}\, s>0$ \\[3mm]
+		$x$ & $\displaystyle\frac{1}{s^2}\,,\ \mathrm{Re}\, s>0$ \\[3mm]
+		$x^n,$ & $\displaystyle\frac{n!}{s^{n+1}}\,,\ \mathrm{Re}\, s>0$\\[3mm]
+		% $\sqrt{x}$ & $\displaystyle\frac{1}{2}\sqrt{\pi}s^{-3/2}\,,\ \mathrm{Re}\, s>0$ \\
+		$\e^{ax}$, & $\displaystyle\frac{1}{s-a}\,,\ \mathrm{Re}\,s>a$ \\[3mm]
+		$x\e^{ax}$, & $\displaystyle\frac{1}{(s-a)^2}\,,\ \mathrm{Re}\, s>a$ \\[3mm]
+		$x^n\e^{ax}$, & $\displaystyle\frac{n!}{(s-a)^{n+1}}\,,\ \mathrm{Re}\, s>a$\\[2mm]
+		\bottomrule
+	\end{tabular}
+	\hspace{1cm}
+	\begin{tabular}{cc}
+		\toprule
+		$f(x),\ x\geq 0$ & $\lapl{f}$\\\midrule
+		$\sin ax$ & $\displaystyle\frac{a}{s^2+a^2}\,,\ \mathrm{Re}\, s>0$\\[3mm]
+		$\cos ax$ & $\displaystyle\frac{s}{s^2+a^2}\,,\ \mathrm{Re}\, s>0$\\[3.5mm]
+		$\e^{ax}\sin bx$ & $\displaystyle\frac{b}{(s-a)^2+b^2}\,,\ \mathrm{Re}\, s>a$\\[3.5mm]
+		$\e^{ax}\cos bx$ & $\displaystyle\frac{s-a}{(s-a)^2+b^2}\,,\ \mathrm{Re}\, s>a$\\[3.5mm]
+		$x\sin ax$ & $\displaystyle\frac{2as}{(s^2+a^2)^2}\,,\ \mathrm{Re}\, s>0$\\[3mm]
+		$x\cos ax$ & $\displaystyle\frac{s^2-a^2}{(s^2+a^2)^2}\,,\ \mathrm{Re}\,s>0$\\[2mm]%\\[1.15cm]
+		\bottomrule
+	\end{tabular}
+\end{table}
+\subsubsection*{Obrázky}
+Popisky obrázků (opět příkaz  \verb!\caption!) se dávají pod obrázek, viz obr. \ref{fsi}. Preferencí je tvořit čárovou grafiku ve vektorovém formátu (optimálně PDF), např. v kombinaci exportu ze softwaru  Matlab/Maple a následné editaci v programu IPE.
+\begin{figure}[h]
+\centering	
+\includegraphics[width=7cm]{FSI.pdf}
+\caption{Logo FSI}
+\label{fsi}
+\end{figure}
+
+K sazbě matematických prostředí je doporučeno využívat balíčku \uv{amsmath} (\texttt{align, alignat, gather, multline}):
+\begin{align}\label{PythVeta}
+a^2+b^2=c^2.\quad\text{(Nezapomínejte na tečku za vzorcem.)}
+\end{align}
+Z rovnice \eqref{PythVeta} plyne...
+\begin{multline*}
+	\phantom{=}\lim_{n\to\infty}\frac{a_kn^k+a_{k-1}n^{k-1}+\dots+a_1k+a_0}{b_\ell n^\ell+b_{\ell-1}
+		n^{\ell-1}+\dots+b_1n+b_0}\\
+	=
+	\begin{cases}
+		0 & \text{je-li }k<\ell,\\
+		a_k/b_\ell & \text{je-li }k=\ell,\\
+		\pm\infty & \text{je-li } k>\ell\quad (\text{nevlastní limita, tento pojem bude upřesněn později}).
+	\end{cases}
+\end{multline*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\renewcommand{\refname}{Literatura}
+K tvorbě seznamu literatury lze použít portál Citace PRO, ten ale nabízí formáty (včetně doporučovaného ČSN ISO 690), které příliš neodpovídají zvyklostem v matematických oborech. Odkazy na jednotlivé položky literatury se provádějí pomocí příkazu \verb!\cite{nazev-polozky-v-bibitem}!. 
+\begin{thebibliography}{3}
+\bibitem{CerNech}
+Čermák, J., Nechvátal, L., {\em On a problem of linearized stability for fractional difference equations}, Nonlinear Dyn. {\bf 104} (2021), 1253--1267.
+
+\bibitem{Kneschke} Kneschke, A., {\em Používanie diferenciálných rovníc v praxi\/}, Alfa, Bratislava, 1969.
+
+\bibitem{Potter}
+Potter, M., Wiggert, D.\,C., {\em Fluid Mechanics, Schaum’s Outline Series\/}, McGraw-Hill, 2008.
+
+\bibitem{Warsi}
+Warsi, U.\,A., {\em Fluid Dynamics, Theoretical and Computational Approaches\/}, 2nd ed., CRC Press, 1998.
+
+\end{thebibliography}
+
+\end{document}
