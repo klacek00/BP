@@ -241,14 +241,14 @@ Problematika neceločíselných derivací je stará téměř jako běžných cel
 $ {d^{n}y}/{dx^{n}} $
 bylo $n = 1/2$. Leibnizova odpověď byla, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$"
 % TODO úvod košatěji
-%TODO jména matematiků v plné délce
-V následujících staletích se svými definicemi přicházeli postupně Euler (1730), Fourier (1820-1822), Abel (1823-1826), Liouville (1832-1855), Riemann  (1847-1876) Caputo (1967)  a další. 
-V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zejména zaměřena. 
+V následujících staletích se svými definicemi neceločíselných derivací či integrálů přicházeli postupně Leonhard Paul Euler (1730), Jean Baptiste Joseph Fourier (1820-1822), Niels Henrik Abel (1823-1826), Joseph Liouville (1832-1855), Georg Friedrich Bernhard Riemann  (1847-1876), Michele Caputo (1967)  a další. 
+V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zejména zaměřena a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. 
 
+%TODO následující kapitola bude celá předělaná podle toho, jak nové kapitoly zrovna vycházejí
 V druhé kapitole jsou zadefinovány gama a Mittag-Lefflerova funkce, zároveň je i krátce pojednáno o možnosti výpočtu funkční hodnoty Mittag-Leflerovy funkce. Ve třetí kapitole se zavádí pojmy Riemann-Liouvillův integrál a je krátce pojednáno o některých vlastnostech Caputovy derivace. Ve 4. kapitole je zavedena počáteční úloha zlomkových diferenciálních rovnic a věty o existenci a jednoznačnosti řešení této rovnice. V páté kapitole se ukáže využití zlomkových diferenciálních rovnic pro modelování mechanického oscilátoru. V šesté kapitole se nejprve zavedou některé pojmy numerického počtu a následně se představí numerické algoritmy pro výpočet Caputovy derivace a počátečních úloh zlomkových diferenciálních rovnic pomocí Eulerových metod. Jejich implementace v prostředí Matlab je součástí přílohy této bakalářské práce. V sedmé kapitole budou algoritmy zpracované v programu Matlab otestovány na vybraných úlohách a numerické řešení bude porovnáno s analytickým řešením.
 
 \subsection{Motivační úloha} 
-Zlomkové diferenciální úlohy hrajou roli ve velkém množství lidské činnosti. Jako jedna z historicky prvních úloh spojená se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky po které je doba "klouzání" hmotného bodu $ T$ nezávislá na počáteční poloze. Touto úlohou se zabýval Abel, který popsal tento problém integrální rovnice:
+Zlomkové diferenciální úlohy plní roli ve velkém množství lidské činnosti. Jako jedna z historicky prvních úloh spojená se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky po které je doba "klouzání" hmotného bodu $ T$ nezávislá na počáteční poloze. Touto úlohou se zabýval již výše zmíněný N. H. Abel, který popsal tento problém integrální rovnice:
 %TODO  iniciály Abela
 \begin{equation} \label{AbelovaUloha}
 		\sqrt[]{2g}T = \int_{0}^{\eta } \left( \eta - y\right) ^{-\frac{1}{2}} f'\left( y\right) \dx{y},
@@ -260,23 +260,23 @@ V následujících letech se ukázalo, že tato integrální rovnice \eqref{Abel
 $$
 	\sqrt[]{2g}T = \Gamma\left( 0.5 \right) \cdot _{0}\!D_{\eta}^{-\frac{1}{2}} f'\left( \eta \right), 
 $$
-
 kde operátor zlomkové derivace $_{0}\!D_{\eta}^{-\frac{1}{2}}$ je zadefinován níže (viz vztah  \eqref{RiemannIntegral}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Základní pojmy}
 V této části práce budou představeny některé pojmy, které se vyskytují ve spojení se zlomkovými diferenciálními rovnicemi. Zejména to bude gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazu. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
 \subsection{Speciální funkce}
-\textbf{Gama funkce}
-Nejprve je vhodné zmínit gama funkci. Gama funkce je funkcí zobecňující faktoriál, avšak stejně jako se neceločíselná derivace zbavuje pout danými reálnými čísly, i gama funkce se dostává mezi čísla reálná. V případě gama funkce je sice definovaná i na oboru komplexních čísel, avšak pro účely této práce je zobecnění na reálná čísla více než dostatečné.
+\textbf{Gama funkce} \\
+Jako první ze speciálních funkcí nutnou pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladnreálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
+Při shrnutí poznatků o Gama funkci je užito literatury \cite{Bashour}
  
-\begin{defin}{\emph{Gama funkce }} \label{GammaFunkce}
-	Nechť $z \in \C$, kde $\space Re\left(z\right) > 0$, pak  hodnota \emph{gama funkce} v bodě z je dána vztahem
+\begin{defin}{\emph{Gama funkce}} \label{GammaFunkce}
+	Nechť $z \in \R ^{+}$, pak hodnota \emph{gama funkce} v bodě z je dána vztahem
 	$$
 	\Gamma \left( z\right)  = \int_{0}^{ \infty } t^{z-1} \cdot e^{-t} \dx{t}, \qquad  Re\left( z\right)  > 0
-	$$ \cite{Bashour}
+	$$
 \end{defin}
-Jedná se pouze o jednu z nejčastěji uváděných definic, lze zavést i definici obecnější, která by pokrývala i obor záporných čísel, pro účely této práce však bude tato definice dostatečná. %přesunout výše a spojit
+
 
 \begin{figure} [h!] 
 	\caption{Graf gama funkce na  intervalu $\left(-5,5\right)$}
@@ -829,7 +829,7 @@ Předpokládejme splnění předpokladů věty \ref{StabilityOfEuler} pro parame
 %\subsection{Stabilita numerických metod pro řešení diferenciálních rovnic Caputova typu}
 %V této části práce bude pojednáno o numerických metod pro počítání počátečních úloh diferenciálních rovnic \eqref{C-PrimyEuler}, \eqref{C-NeprimyEuler} a \eqref{C-VazenaMetoda}. Dále bude řešena i L1 metoda pro výpočet Caputovy derivace funkce.
 
-\section{Testovací úlohy}
+\subsection{Testovací úlohy}
 %TODO odstavec výše uvedené numerické úlohy budeme testovat na testovacích úlohách
 
 	\begin{prikl}\label{TestovaciUloha1}

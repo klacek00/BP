@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  3 APR 2024 13:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  4 APR 2024 03:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,16 +1144,16 @@ L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 .
-(rerunfilecheck)             Checksum: BC9D66FD75AB4E235502B611659040B0;2324.
+(rerunfilecheck)             Checksum: 3CE35D03DE315D83236ABFAA9544106C;2338.
  ) 
 Here is how much of TeX's memory you used:
- 20037 strings out of 474386
- 319323 string characters out of 5750702
- 1998496 words of memory out of 5000000
+ 20043 strings out of 474386
+ 319403 string characters out of 5750702
+ 1999496 words of memory out of 5000000
  41608 multiletter control sequences out of 15000+600000
- 710455 words of font info for 339 fonts, out of 8000000 for 9000
+ 711115 words of font info for 343 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,117p,1128b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,117p,1128b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
 rams/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI7.pfb><D:/programs/TeX/
 Instal/fonts/type1/public/newtx/LibertineMathRM.pfb><D:/programs/TeX/Instal/fon
@@ -1165,7 +1165,7 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2253236 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2253064 bytes).
 PDF statistics:
  549 PDF objects out of 1000 (max. 8388607)
  143 named destinations out of 1000 (max. 500000)

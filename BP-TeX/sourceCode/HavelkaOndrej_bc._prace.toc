@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {3.1}Základní pojmy numerického počtu}{20}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Algoritmy pro výpočet Caputovy derivace}{21}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Algoritmy pro řešení diferenciálních rovnic Caputova typu}{22}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Testovací úlohy}{25}{section.4}%
-\contentsline {section}{\numberline {5}Závěr}{28}{section.5}%
+\contentsline {subsection}{\numberline {3.4}Testovací úlohy}{25}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Závěr}{28}{section.4}%
