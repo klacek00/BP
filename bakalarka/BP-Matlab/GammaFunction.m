@@ -1,0 +1,1 @@
+fplot(@gamma, 'LineWidth',2)

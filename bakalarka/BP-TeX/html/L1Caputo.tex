@@ -1,0 +1,47 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
+function [t,y] = L1Caputo(y_der,alpha,a,b,N)%,y0)
+
+% 0 < alpha < 1
+format long;
+t = linspace(a,b,N+1);
+y = diag(zeros(length(t)));
+y(1) = 0;
+%gamma(1)
+for i=1:(N)%i=0:k, ale matlab čísluje od 1
+    tau = t(i+1)-t(i);
+    b_n = (tau^(-alpha))/(gamma(2-alpha))*((i+1)^(1-alpha)-i^(1-alpha));
+    %y_der(t(i+1))
+    y(i+1) = y(i) + b_n*(y_der(t(i+1))-y_der(t(i)));
+    %tau * y_der(t(i),y(:,i));
+end
+plot(t,y)
+hold on;
+plot(t, 1.128379167*sqrt(t), 'k')
+end
+\end{verbatim}
+
+        \color{lightgray} \begin{verbatim}Not enough input arguments.
+
+Error in L1Caputo (line 5)
+t = linspace(a,b,N+1);
+\end{verbatim} \color{black}
+    
+
+
+\end{document}
+
