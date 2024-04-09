@@ -237,9 +237,8 @@ v seznamu literatury.
 %\subsection{Historie zlomkového kalkulu}
 %TODO upravit si kapitoly, tak aby kapitola 2 rozebrala speciální funkce, zlomkovou D+I a FDE jako 3 podkapitoly a zbytek pouze zvýraznit tučně jako názvy
 
-Problematika neceločíselných derivací je stará téměř jako běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy, ačkoli se nejedná o zobecnění v pravém matematickém slova smyslu. Roku 1676 Leibniz představil svoji teorii diferenciálního počtu a již v roce 1695 se L'Hospital ve své korespondenci s Leibnizem táže na význam, jestli by ve vyjádření
-$ {d^{n}y}/{dx^{n}} $
-bylo $n = 1/2$. Leibnizova odpověď byla, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$"
+Problematika neceločíselných derivací je stará téměř jako běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy, ačkoli se nejedná o zobecnění v pravém matematickém slova smyslu. Roku 1676 Gottfried Wilhelm Leibniz představil svoji teorii diferenciálního počtu a již v roce 1695 se L'Hospital ve své korespondenci s G. W. Leibnizem táže na interpretaci půlté derivace funkce $y\left(x\right)$, tedy na neceločíselné $n = 1/2$ ve výrazu
+$ {d^{n}y\left(x\right)}/{dx^{n}} $. Leibnizova odpověď byla, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$", což se později ukázalo jako nepřesné, ale jednalo se o první úvahu nad tím, jestli je možné zadefinovat derivaci neceločíselného stupně. O paradoxu, který svým tvrzením způsobil pojednává například \cite{LeibnitzFail}
 % TODO úvod košatěji
 V následujících staletích se svými definicemi neceločíselných derivací či integrálů přicházeli postupně Leonhard Paul Euler (1730), Jean Baptiste Joseph Fourier (1820-1822), Niels Henrik Abel (1823-1826), Joseph Liouville (1832-1855), Georg Friedrich Bernhard Riemann  (1847-1876), Michele Caputo (1967)  a další. 
 V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zejména zaměřena a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. 
@@ -267,7 +266,7 @@ kde operátor zlomkové derivace $_{0}\!D_{\eta}^{-\frac{1}{2}}$ je zadefinován
 V této části práce budou představeny některé pojmy, které se vyskytují ve spojení se zlomkovými diferenciálními rovnicemi. Zejména to bude gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazu. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
 \subsection{Speciální funkce}
 \textbf{Gama funkce} \\
-Jako první ze speciálních funkcí nutnou pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladnreálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
+Jako první ze speciálních funkcí nutnou pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladných reálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
 Při shrnutí poznatků o Gama funkci je užito literatury \cite{Bashour}
  
 \begin{defin}{\emph{Gama funkce}} \label{GammaFunkce}
@@ -1160,6 +1159,7 @@ DALIR, Mehdi a Majid BASHOUR. Applications of Fractional Calculus. Applied Mathe
 
 \bibitem{LiYe} LI, Changpin, An CHEN a Junije YE. Numerical approaches to fractional calculus and fractional ordinary differential equation. J. Comput. Physics. 230. 3352-3368. 10.1016/j.jcp.2011.01.030. 
 
+\bibitem{LeibnitzFail} WEISS, George H. R. Klages, G. Radons, I.M. Sokolov (eds.): Anomalous Transport. Online. Journal of statistical physics. 2009, roč. 135, č. 2, s. 389-391. ISSN 0022-4715. Dostupné z: https://doi.org/10.1007/s10955-009-9713-5. [cit. 2024-04-09].
 
 %TODO vytvořit citaci v citacepro
 \end{thebibliography}
