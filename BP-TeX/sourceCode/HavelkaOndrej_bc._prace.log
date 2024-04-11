@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  9 APR 2024 02:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  11 APR 2024 02:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,69 +985,69 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 10.6215pt on input line 230.
  [10]
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 249.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 250.
  [11]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.6215pt on input line 281.
+(Font)              scaled to size 10.6215pt on input line 284.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 281.
+(Font)              scaled to size 7.76001pt on input line 284.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.917pt on input line 281.
+(Font)              scaled to size 5.917pt on input line 284.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 281.
+(Font)              scaled to size 6.40501pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 281.
+(Font)              scaled to size 11.49753pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 281.
+(Font)              scaled to size 8.40002pt on input line 284.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 281.
-<GammaFunction(-5,5).png, id=188, 1143.3114pt x 602.7318pt>
-File: GammaFunction(-5,5).png Graphic file (type png)
-<use GammaFunction(-5,5).png>
-Package pdftex.def Info: GammaFunction(-5,5).png  used on input line 283.
-(pdftex.def)             Requested size: 483.69687pt x 254.9942pt.
- [12 <./GammaFunction(-5,5).png (PNG copy)>] [13]
-<fracGammaPlot.png, id=218, 1163.0652pt x 620.5584pt>
+(Font)              scaled to size 6.40501pt on input line 284.
+<Gamma+.jpg, id=188, 1927.2pt x 958.58125pt>
+File: Gamma+.jpg Graphic file (type jpg)
+<use Gamma+.jpg>
+Package pdftex.def Info: Gamma+.jpg  used on input line 286.
+(pdftex.def)             Requested size: 483.69687pt x 240.58084pt.
+ [12 <./Gamma+.jpg>] [13]
+<fracGammaPlot.png, id=214, 1163.0652pt x 620.5584pt>
 File: fracGammaPlot.png Graphic file (type png)
 <use fracGammaPlot.png>
-Package pdftex.def Info: fracGammaPlot.png  used on input line 387.
+Package pdftex.def Info: fracGammaPlot.png  used on input line 390.
 (pdftex.def)             Requested size: 483.69687pt x 258.07613pt.
-
-Overfull \hbox (7.5418pt too wide) in paragraph at lines 404--406
+ [14]
+Overfull \hbox (7.5418pt too wide) in paragraph at lines 407--409
 \T1/XCharter-TLF/m/n/12 (-20) je $3\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 
 (-20) 509485382540145 \LMS/ntxsy/m/n/12 ^^A \T1/XCharter-TLF/m/n/12 (-20) 10[]$
  a re-la-tivní roz-díl t¥chto vy-po£te-ných hod-not je $\LMS/ntxsy/m/n/12 ^^Y \
@@ -1055,44 +1055,40 @@ T1/XCharter-TLF/m/n/12 (-20) 5\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 (-20)
  865102640704210 \LMS/ntxsy/m/n/12 ^^A
  []
 
-[14] [15 <./fracGammaPlot.png (PNG copy)>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+[15 <./fracGammaPlot.png (PNG copy)>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 [17] [18]
-<FractionalOscillator_AnalyticalSolution.pdf, id=295, 649.42625pt x 355.3275pt>
+<FractionalOscillator_AnalyticalSolution.pdf, id=287, 649.42625pt x 355.3275pt>
 
 File: FractionalOscillator_AnalyticalSolution.pdf Graphic file (type pdf)
 <use FractionalOscillator_AnalyticalSolution.pdf>
 Package pdftex.def Info: FractionalOscillator_AnalyticalSolution.pdf  used on i
-nput line 621.
+nput line 624.
 (pdftex.def)             Requested size: 483.69687pt x 264.65695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 736--738
+Overfull \hbox (8.17236pt too wide) in paragraph at lines 739--741
 []\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
  di-fe-ren-ci-ální rov-nice: $[][]$
  []
 
 [22]
-Overfull \hbox (16.77112pt too wide) detected at line 804
+Overfull \hbox (16.77112pt too wide) detected at line 807
 [][][][][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-[24]
+[23] [24]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (31.55031pt too wide) in paragraph at lines 940--968
+Overfull \hbox (31.55031pt too wide) in paragraph at lines 943--971
  [][] 
  []
 
@@ -1100,7 +1096,7 @@ Overfull \hbox (31.55031pt too wide) in paragraph at lines 940--968
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 972--1002
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 975--1005
  [][] 
  []
 
@@ -1108,7 +1104,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 972--1002
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1008--1036
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1011--1039
  [][] 
  []
 
@@ -1120,13 +1116,13 @@ Underfull \vbox (badness 2671) has occurred while \output is active []
 
  [27]
 [28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1160--1161
+Underfull \hbox (badness 1655) in paragraph at lines 1163--1164
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1160--1161
+Underfull \hbox (badness 1102) in paragraph at lines 1163--1164
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
@@ -1143,13 +1139,13 @@ Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 (rerunfilecheck)             Checksum: 3CE35D03DE315D83236ABFAA9544106C;2338.
  ) 
 Here is how much of TeX's memory you used:
- 20048 strings out of 474386
- 319512 string characters out of 5750702
+ 20038 strings out of 474386
+ 319205 string characters out of 5750702
  1998496 words of memory out of 5000000
  41609 multiletter control sequences out of 15000+600000
- 711445 words of font info for 345 fonts, out of 8000000 for 9000
+ 710522 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,117p,1128b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,117p,1128b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
 rams/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI7.pfb><D:/programs/TeX/
 Instal/fonts/type1/public/newtx/LibertineMathRM.pfb><D:/programs/TeX/Instal/fon
@@ -1161,9 +1157,9 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2254034 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2292158 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
  63615 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -237,18 +237,19 @@ v seznamu literatury.
 %\subsection{Historie zlomkového kalkulu}
 %TODO upravit si kapitoly, tak aby kapitola 2 rozebrala speciální funkce, zlomkovou D+I a FDE jako 3 podkapitoly a zbytek pouze zvýraznit tučně jako názvy
 
-Problematika neceločíselných derivací je stará téměř jako běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy, ačkoli se nejedná o zobecnění v pravém matematickém slova smyslu. Roku 1676 Gottfried Wilhelm Leibniz představil svoji teorii diferenciálního počtu a již v roce 1695 se L'Hospital ve své korespondenci s G. W. Leibnizem táže na interpretaci půlté derivace funkce $y\left(x\right)$, tedy na neceločíselné $n = 1/2$ ve výrazu
-$ {d^{n}y\left(x\right)}/{dx^{n}} $. Leibnizova odpověď byla, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$", což se později ukázalo jako nepřesné, ale jednalo se o první úvahu nad tím, jestli je možné zadefinovat derivaci neceločíselného stupně. O paradoxu, který svým tvrzením způsobil pojednává například \cite{LeibnitzFail}
+Problematika neceločíselných derivací je stará téměř jako běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy. Jak se ale v této práci později naznačí, nejedná se o pravé zobecnění, jelikož lze zlomkovou derivaci zadefinovat vícero neekvivalentími způsoby. 
+
+Poprvé se s neceločíselné derivaci dostaneme nedlouho po roce 1676, kdy Gottfried Wilhelm Leibniz představil svoji teorii diferenciálního počtu. Již v roce 1695 se Guillaume de L'Hospital ve své korespondenci s G. W. Leibnizem táže na interpretaci půlté derivace funkce $y\left(x\right)$, neboli  $n = 1/2$ ve výrazu ${d^{n}y\left(x\right)}/{dx^{n}}$. G. W. Leibniz tehdy odpověděl, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$", což se později ukázalo jako nepřesné. O paradoxu, který svým tvrzením způsobil pojednává například \cite{LeibnitzFail}
 % TODO úvod košatěji
 V následujících staletích se svými definicemi neceločíselných derivací či integrálů přicházeli postupně Leonhard Paul Euler (1730), Jean Baptiste Joseph Fourier (1820-1822), Niels Henrik Abel (1823-1826), Joseph Liouville (1832-1855), Georg Friedrich Bernhard Riemann  (1847-1876), Michele Caputo (1967)  a další. 
-V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zejména zaměřena a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. 
+V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zaměřena a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. Cílem práce je zpracovat základní přístupy numerického řešení těchto problémů a ověřit jejich přesnost a řád konvergence na testovacích úlohách.
 
 %TODO následující kapitola bude celá předělaná podle toho, jak nové kapitoly zrovna vycházejí
 V druhé kapitole jsou zadefinovány gama a Mittag-Lefflerova funkce, zároveň je i krátce pojednáno o možnosti výpočtu funkční hodnoty Mittag-Leflerovy funkce. Ve třetí kapitole se zavádí pojmy Riemann-Liouvillův integrál a je krátce pojednáno o některých vlastnostech Caputovy derivace. Ve 4. kapitole je zavedena počáteční úloha zlomkových diferenciálních rovnic a věty o existenci a jednoznačnosti řešení této rovnice. V páté kapitole se ukáže využití zlomkových diferenciálních rovnic pro modelování mechanického oscilátoru. V šesté kapitole se nejprve zavedou některé pojmy numerického počtu a následně se představí numerické algoritmy pro výpočet Caputovy derivace a počátečních úloh zlomkových diferenciálních rovnic pomocí Eulerových metod. Jejich implementace v prostředí Matlab je součástí přílohy této bakalářské práce. V sedmé kapitole budou algoritmy zpracované v programu Matlab otestovány na vybraných úlohách a numerické řešení bude porovnáno s analytickým řešením.
 
 \subsection{Motivační úloha} 
-Zlomkové diferenciální úlohy plní roli ve velkém množství lidské činnosti. Jako jedna z historicky prvních úloh spojená se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky po které je doba "klouzání" hmotného bodu $ T$ nezávislá na počáteční poloze. Touto úlohou se zabýval již výše zmíněný N. H. Abel, který popsal tento problém integrální rovnice:
-%TODO  iniciály Abela
+Zlomkové diferenciální úlohy plní svou úlohu v řadě technických a vědních oborů. Jako jedna z historicky prvních úloh spojená se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky po které je doba "klouzání" hmotného bodu $ T$ v homogenním tíhovém poli nezávislá na počáteční poloze. Touto úlohou se zabýval již výše zmíněný N. H. Abel, který popsal tento problém integrální rovnice:
+
 \begin{equation} \label{AbelovaUloha}
 		\sqrt[]{2g}T = \int_{0}^{\eta } \left( \eta - y\right) ^{-\frac{1}{2}} f'\left( y\right) \dx{y},
 \end{equation}
@@ -263,7 +264,9 @@ kde operátor zlomkové derivace $_{0}\!D_{\eta}^{-\frac{1}{2}}$ je zadefinován
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Základní pojmy}
-V této části práce budou představeny některé pojmy, které se vyskytují ve spojení se zlomkovými diferenciálními rovnicemi. Zejména to bude gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazu. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
+Ve druhé kapitole budou představeny definice, se kterými se bude v práci pracovat. V první podkapitole to budou 2 speciální funkce, gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazu. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
+Ve druhé podkapitole budou představeny stěžejní definice Riemann-Liouvillova integrálu i derivace a poté i Caputovy derivace, společně s některými důležitými vlastnostmi.
+Třetí podkapitola představí zlomkové diferenciální rovnice a uvede větu o jednoznačnosti řešení počátečních úloh. V poslední části této podkapitoly se ukáže příklad využití zlomkových diferenciálních rovnic při modelováni kmitání tlumeného mechanického oscilátoru.
 \subsection{Speciální funkce}
 \textbf{Gama funkce} \\
 Jako první ze speciálních funkcí nutnou pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladných reálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
@@ -272,35 +275,37 @@ Při shrnutí poznatků o Gama funkci je užito literatury \cite{Bashour}
 \begin{defin}{\emph{Gama funkce}} \label{GammaFunkce}
 	Nechť $z \in \R ^{+}$, pak hodnota \emph{gama funkce} v bodě z je dána vztahem
 	$$
-	\Gamma \left( z\right)  = \int_{0}^{ \infty } t^{z-1} \cdot e^{-t} \dx{t}, \qquad  Re\left( z\right)  > 0
+	\Gamma \left( z\right)  = \int_{0}^{ \infty } t^{z-1} \cdot e^{-t} \dx{t}, \qquad   z > 0
 	$$
 \end{defin}
 
 
 \begin{figure} [h!] 
-	\caption{Graf gama funkce na  intervalu $\left(-5,5\right)$}
+	\caption{Graf gama funkce na  intervalu $\left(0.1, 5\right)$}
 	\label{GrafGamma}
-	\includegraphics[width=1\textwidth]{GammaFunction(-5,5).png}
+	\includegraphics[width=1\textwidth]{Gamma+.jpg}
 \end{figure}
-%TODO graf jen pro kladné čísla
-Ačkoli je definice gama funkce \ref{GammaFunkce} uváděna pouze pro  kladnou reálnou část, pro hlubší představu je vykreslen i graf \ref{GrafGamma} na symetrickém intervalu $\left(-5, 5\right)$, tedy i pro záporné hodnoty. 
 
-Z vlastností gama funkce budou zmíněny jen ty nejdůležitější.
-\begin{veta} Pro přirozené čísla $n$ platí vztah mezi hodnotou gama funkce a hodnoutou faktoriálu
-	\begin{equation}
-		\forall n \in \N:	\qquad  \Gamma\left( n+1\right)  = n!.
-	\end{equation}
-\end{veta} \label{gamma}
-Faktoriál je tedy pouhým zjednodušením gama funkce a zároveň je možné gama funkci na oboru přirozených čísel uvažovat jako faktoriál.
+Z vlastností gama funkce budou zmíněny dva nejdůležitější vztahy.
 
-Stejně jako hodnotu faktoriálu lze spočítat pomocí rekurzivní funkce, která využívá pouze zadefinování hodnoty faktoriálu v 0, tak i hodnotu gama funkce s kladným argumentem lze díky následující větě rekurzivně spočítat, pokud známe jeho hodnotu na intervalu $\left( 0, 1\right\rangle $.
-\begin{veta}
-	Pro kladné přirozené čísla $ z \in \R^{+}$ platí
-	\begin{equation}\label{gamma2}
-		\Gamma\left( z+1\right)  = z \cdot \Gamma\left(z\right)
-	\end{equation}
-\end{veta} 
-%TODO
+\begin{align} 	
+	\forall n \in \N:	\qquad  &\Gamma\left( n+1\right)  = n!.\label{gamma}\\
+	\forall z \in \R^{+}:\qquad &\Gamma\left( z+1\right)  = z \cdot \Gamma\left(z\right).\label{gamma2}
+\end{align}
+
+%\begin{veta} Pro přirozené čísla $n$ platí vztah mezi hodnotou gama funkce a hodnoutou faktoriálu
+%	\begin{equation}
+%		\forall n \in \N:	\qquad  \Gamma\left( n+1\right)  = n!.
+%	\end{equation}
+%\end{veta} \label{gamma}
+Z těchto vztahů vyplývá následující. Faktoriál je tedy pouhým zjednodušením gama funkce a zároveň je možné gama funkci na oboru přirozených čísel uvažovat jako faktoriál. A stejně jako hodnotu faktoriálu lze spočítat pomocí rekurzivní funkce, která využívá pouze zadefinování hodnoty faktoriálu v 0, tak i hodnotu gama funkce s kladným argumentem lze díky následující větě rekurzivně spočítat, pokud známe jeho hodnotu na intervalu $\left( 0, 1\right\rangle $.
+%\begin{veta}
+%	Pro kladné přirozené čísla $ z \in \R^{+}$ platí
+%	\begin{equation}\label{gamma2}
+%		\Gamma\left( z+1\right)  = z \cdot \Gamma\left(z\right)
+%	\end{equation}
+%\end{veta} 
+
 
 \begin{table}[h!]
 	\centering
@@ -312,9 +317,7 @@ Stejně jako hodnotu faktoriálu lze spočítat pomocí rekurzivní funkce, kter
 		\bottomrule
 	\end{tabular}
 \end{table}
-
-
-\textbf{Mittag-Lefflerova funkce}
+\textbf{Mittag-Lefflerova funkce}\\
 Mittag-Lefflerova funkce v oblasti zlomkových diferenciálních rovnic představuje podobnou roli, jako exponenciální funkce se základem $e$ pro obyčejné diferenciální rovnice a v mnoha zdrojích se o ní vznešeně mluví jako o zlaté funkci zlomkového kalkulu.
 
 I přes velký význam se však jedná o funkci opominutou ve většině běžně dostupného softwaru. Výjimkou v tomto není ani Matlab R2022b, který je v této práci využit.
@@ -335,7 +338,7 @@ Existuje také jednoparametrická Mittag-Leflerova funkce je možné také zjedn
 %\end{defin}
 %Je zřejmé, že při použití $\gamma = 1$ a znalostí z \eqref{gamma} si jsou dvouparametrická a tříparametrická definice ekvivalentní.
 
-Pro speciální případ, kdy se $\alpha = 0$ není Mittag-Leflerova funkce výše definovaná. Dodefinování v tomto případě při $|z| < 1$ není problematické, jelikož se tento případ zjednoduší na geometrickou řadu, pro kterou explicitně známe řešení. Mittag-Lefflerovu funkci v bodě $z$ s parametry $\alpha = 0, \beta > 0$ definujeme jako:
+Pro případ, kdy se $\alpha = 0$ není Mittag-Leflerova funkce výše definovaná, jelikož v takovém případě není zaručena konvergence řady. Dodefinování při $|z| < 1$ již není problematické, jelikož se tento případ zjednoduší na geometrickou řadu, pro kterou explicitně známe řešení. Mittag-Lefflerovu funkci v bodě $z$ s parametry $\alpha = 0, \beta > 0$ definujeme jako:
 %Pro speciální případ se dodefinováva ML fce
 \begin{equation}
 	E_{0, \beta}\left(z\right) = \frac{1}{\Gamma \left(\beta\right)\cdot \left(1-z\right)}, \qquad \forall z \in \R: |z| < 1
