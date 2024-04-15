@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  11 APR 2024 02:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  16 APR 2024 01:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,13 +1073,13 @@ nput line 624.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 739--741
+Overfull \hbox (8.17236pt too wide) in paragraph at lines 744--746
 []\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
  di-fe-ren-ci-ální rov-nice: $[][]$
  []
 
 [22]
-Overfull \hbox (16.77112pt too wide) detected at line 807
+Overfull \hbox (16.77112pt too wide) detected at line 812
 [][][][][]
  []
 
@@ -1088,7 +1088,7 @@ Overfull \hbox (16.77112pt too wide) detected at line 807
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (31.55031pt too wide) in paragraph at lines 943--971
+Overfull \hbox (31.55031pt too wide) in paragraph at lines 948--976
  [][] 
  []
 
@@ -1096,7 +1096,7 @@ Overfull \hbox (31.55031pt too wide) in paragraph at lines 943--971
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 975--1005
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 980--1010
  [][] 
  []
 
@@ -1104,7 +1104,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 975--1005
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1011--1039
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1016--1044
  [][] 
  []
 
@@ -1116,13 +1116,13 @@ Underfull \vbox (badness 2671) has occurred while \output is active []
 
  [27]
 [28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1163--1164
+Underfull \hbox (badness 1655) in paragraph at lines 1168--1169
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1163--1164
+Underfull \hbox (badness 1102) in paragraph at lines 1168--1169
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
@@ -1139,11 +1139,11 @@ Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 (rerunfilecheck)             Checksum: 3CE35D03DE315D83236ABFAA9544106C;2338.
  ) 
 Here is how much of TeX's memory you used:
- 20038 strings out of 474386
- 319205 string characters out of 5750702
+ 20032 strings out of 474386
+ 319043 string characters out of 5750702
  1998496 words of memory out of 5000000
  41609 multiletter control sequences out of 15000+600000
- 710522 words of font info for 340 fonts, out of 8000000 for 9000
+ 709752 words of font info for 336 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,14n,117p,1128b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
@@ -1157,7 +1157,7 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2292158 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2292501 bytes).
 PDF statistics:
  547 PDF objects out of 1000 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
