@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  16 APR 2024 01:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  20 APR 2024 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,10 +1044,10 @@ Package pdftex.def Info: Gamma+.jpg  used on input line 286.
 <fracGammaPlot.png, id=214, 1163.0652pt x 620.5584pt>
 File: fracGammaPlot.png Graphic file (type png)
 <use fracGammaPlot.png>
-Package pdftex.def Info: fracGammaPlot.png  used on input line 390.
+Package pdftex.def Info: fracGammaPlot.png  used on input line 391.
 (pdftex.def)             Requested size: 483.69687pt x 258.07613pt.
  [14]
-Overfull \hbox (7.5418pt too wide) in paragraph at lines 407--409
+Overfull \hbox (7.5418pt too wide) in paragraph at lines 408--410
 \T1/XCharter-TLF/m/n/12 (-20) je $3\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 
 (-20) 509485382540145 \LMS/ntxsy/m/n/12 ^^A \T1/XCharter-TLF/m/n/12 (-20) 10[]$
  a re-la-tivní roz-díl t¥chto vy-po£te-ných hod-not je $\LMS/ntxsy/m/n/12 ^^Y \
@@ -1055,31 +1055,26 @@ T1/XCharter-TLF/m/n/12 (-20) 5\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 (-20)
  865102640704210 \LMS/ntxsy/m/n/12 ^^A
  []
 
-[15 <./fracGammaPlot.png (PNG copy)>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
-
- []
-
-[17] [18]
+[15 <./fracGammaPlot.png (PNG copy)>] [16] [17] [18]
 <FractionalOscillator_AnalyticalSolution.pdf, id=287, 649.42625pt x 355.3275pt>
 
 File: FractionalOscillator_AnalyticalSolution.pdf Graphic file (type pdf)
 <use FractionalOscillator_AnalyticalSolution.pdf>
 Package pdftex.def Info: FractionalOscillator_AnalyticalSolution.pdf  used on i
-nput line 624.
+nput line 619.
 (pdftex.def)             Requested size: 483.69687pt x 264.65695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 744--746
+Overfull \hbox (8.17236pt too wide) in paragraph at lines 742--744
 []\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
  di-fe-ren-ci-ální rov-nice: $[][]$
  []
 
 [22]
-Overfull \hbox (16.77112pt too wide) detected at line 812
+Overfull \hbox (16.77112pt too wide) detected at line 810
 [][][][][]
  []
 
@@ -1088,7 +1083,7 @@ Overfull \hbox (16.77112pt too wide) detected at line 812
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (31.55031pt too wide) in paragraph at lines 948--976
+Overfull \hbox (31.55031pt too wide) in paragraph at lines 946--974
  [][] 
  []
 
@@ -1096,7 +1091,7 @@ Overfull \hbox (31.55031pt too wide) in paragraph at lines 948--976
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 980--1010
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 978--1008
  [][] 
  []
 
@@ -1104,7 +1099,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 980--1010
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1016--1044
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1014--1042
  [][] 
  []
 
@@ -1116,13 +1111,13 @@ Underfull \vbox (badness 2671) has occurred while \output is active []
 
  [27]
 [28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1168--1169
+Underfull \hbox (badness 1655) in paragraph at lines 1166--1167
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1168--1169
+Underfull \hbox (badness 1102) in paragraph at lines 1166--1167
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
@@ -1139,11 +1134,11 @@ Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 (rerunfilecheck)             Checksum: 3CE35D03DE315D83236ABFAA9544106C;2338.
  ) 
 Here is how much of TeX's memory you used:
- 20032 strings out of 474386
- 319043 string characters out of 5750702
+ 20038 strings out of 474386
+ 319211 string characters out of 5750702
  1998496 words of memory out of 5000000
  41609 multiletter control sequences out of 15000+600000
- 709752 words of font info for 336 fonts, out of 8000000 for 9000
+ 710491 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,14n,117p,1128b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
@@ -1157,9 +1152,9 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2292501 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2293711 bytes).
 PDF statistics:
- 547 PDF objects out of 1000 (max. 8388607)
+ 548 PDF objects out of 1000 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
  63615 words of extra memory for PDF output out of 74296 (max. 10000000)
 

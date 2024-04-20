@@ -317,6 +317,7 @@ Z těchto vztahů vyplývá následující. Faktoriál je tedy pouhým zjednodu�
 		\bottomrule
 	\end{tabular}
 \end{table}
+
 \textbf{Mittag-Lefflerova funkce}\\
 Mittag-Lefflerova funkce v oblasti zlomkových diferenciálních rovnic představuje podobnou roli, jako exponenciální funkce se základem $e$ pro obyčejné diferenciální rovnice a v mnoha zdrojích se o ní vznešeně mluví jako o zlaté funkci zlomkového kalkulu.
 
@@ -516,9 +517,7 @@ Avšak pro levou a pravou nultou Caputovu derivaci stejné funkce platí:
 	&R = \lim\limits_{\alpha \to {0}^{+}} {_{0}^{C}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)}  - \cos{\left(0\right)} = \cos{\left(t\right)} - 1 \\
 	&L \neq R.
 \end{align}
-
 \textbf{Další vlastnosti zlomkové derivace}\\
-
 Zlomková derivace má řadu vlastností, o kterých by se dalo diskutovat, zde uvedu pouze některé.
 
 Jedna z velmi důležitých vlastností zlomkové derivace pro její výpočet je věta o komutativitě Caputovy derivace:
@@ -567,13 +566,9 @@ $$ |y\left(t, b\right)- y\left( t, a\right)| \leq L \cdot |b-a| \qquad  \forall 
 
 \begin{veta} [Jednoznačnost řešení počáteční úlohy zlomkové diferenciální rovnice]
 	Mějme okolí $\mathcal{D}$, takové že $\mathcal{D} := \left[0,\mathcal{X} ^{*}\right] \times \left[y_{0}^{0} - \delta , y_{0}^{0} + \delta \right] $ přičemž $\mathcal{X}^{*} > 0$ a $\delta > 0$ A nechť je funkce $f: \mathcal{D} \to \R$ ohraničená na $\mathcal{D}$ a splňuje výše zmíněnou Lipschitzovu podmínku, vzhledem k druhé proměnné. A pokud věta \ref{ExistenceFDE} platí, pak existuje právě jedna funkce $y:\left[0, \mathcal{X} \to \R\right]$, která je řešením počátečního problému \eqref{PocUloha}.
-\end{veta} 
-
-
-
-\textbf{Využití zlomkových diferenciálních rovnic}
-Z mnohého využití  zlomkových diferenciálních rovnic je tato kapitola zaměřena na uplatnění v oblasti mechanického kmitání. Analytické řešení takovýchto rovnic v obecnosti není jednoduché. Ve zjednodušených příkladech této kapitoly bude nastíněna možnost řešení pomocí Laplaceovy transformace.
-
+\end{veta}
+\textbf{Využití zlomkových diferenciálních rovnic}\\
+Z mnohého využití  zlomkových diferenciálních rovnic je tato kapitola zaměřena na uplatnění v oblasti mechanického kmitání. Analytické řešení takovýchto rovnic v obecnosti není jednoduché. Ve zjednodušených příkladech této kapitoly bude nastíněna možnost řešení pomocí Laplaceovy transformace.\\
 \textbf{Tlumený harmonický oscilátor} \label{TlumenyHarmonickyOscilator}\\
 V klasické mechanice se za harmonický oscilátor považuje těleso, jehož těžiště se pohybuje podle diferenciální rovnice:
 
@@ -633,7 +628,7 @@ Při studování této problematiky bylo použito knihy \cite{ChenInMechanics}, 
 
 
 
-\textbf{Nucené kmity}
+\textbf{Nucené kmity}\\
 Nucenými kmity je v obecnosti myšleno kmitání, které je způsobeno vnějším silovým působením a vynucují tedy kmitání o jiné frekvenci.
 Tento vnější vliv lze vymodelovat pomocí přidání funkce rychlosti, neboli první derivace polohy hmotného bodu $c\cdot y'\left(t\right)$ do rovnice \ref{HarmonicOscilator} z předchozí kapitoly.
 \begin{equation}
@@ -651,14 +646,17 @@ Tato rovnice by ale vyžadovala k jejímu modelování složitějšího algoritm
 
 \section{Numerické metody pro zlomkové diferenciální rovnice}
 Jak je možné vidět výše, zlomkové diferenciální rovnice jsou náročné řešit analyticky, proto je vcelku logické, že pro jejich výpočet se v praxi často využívají numerické výpočty. 
-V první podkapitole budou ještě představeny pojmy využívané v numerické matematice. Zejména pojmy týkající se chyby výpočtu a řádu konvergence numerické metody.
+V první podkapitole budou ještě představeny pojmy využívané v numerické matematice. Zadefinuje se numerická úloha zlomkových diferenciálních rovnic, provede se diskretizace a představí se pojmy chyb výpočtu a konvergence numerické metody.
 Ve druhé podkapitole budou ukázány 2 metody k výpočtu Caputovy derivace dané funkce, na což naváže třetí podkapitola, ve které budou ukázány tři metody které řeší počáteční úlohy zlomkových diferenciálních rovnic Caputova typu. S metodami pro výpočet řešení těchto úloh souvisí také %TODO dopsat
 
 V celé následující části této práce bude využívána definice Caputovy derivace, jakožto modernějšího pojetí problému. V této kapitole byly přejaty pojmy a definice z \cite{NumMetody} a \cite{Cangpin}
 
 V této kapitole budou nejprve uvedeny základní pojmy pro numerická řešení zlomkových diferenciálních rovnic a poté budou  představeny L1 a L2 metody výpočtu Caputovy derivace a~Eulerovy metody pro řešení počátečních úloh zlomkových diferenciálních rovnic.
 \subsection{Základní pojmy numerického počtu}
-Řešení počátečního problému pro diferenciální rovnice se v numerickém počtu zjednodušuje na na problém diferenčních rovnic. V každém kroku $n$ o velikosti $\tau_{n} = t_{n+1}-t_{n}$ (kde v této práci budou problémy řešeny pouze s konstantním $\tau$) tohoto zjednodušení dochází k chybě. V numerické matematice zavádíme několik druhů chyb, například lokální diskretizační chybu nebo globální diskretizační chybu. %TODO zavést síť tau, přidat formulaci úlohy, interval,vypsat jaký je rozdíl ve značení mezi numerickým a přesným řešením 
+Uvažujeme počáteční úlohu \ref{PocUloha}. Zatímco $y\left(t\right)$ označuje přesné řešení počáteční úlohy, kde $t \in I$ $I = \left\langle0, b\right\rangle$. Numericky můžeme úlohu řešit pouze v konečně mnoha bodech intervalu. Body, ve kterých řešení aproximujeme značíme $t_n$ a počet těchto bodů je $N$. Přičemž vždy platí, že $t_n > t_{n+1}$ a pro účely této práce budeme uvažovat, že $t_{n+1} - t_n = \tau = konst \qquad \forall n: t_n \leq b$. Takovému dělení intervalu~$I$ se říká ekvidistantní. V některých aplikacích je výhodné zavést i neekvidistantní dělení intervalu~$I$, tomuto se ale v této práci nebudeme věnovat.
+Aproximaci řešení zlomkové diferenciální rovnice v bodě $t_n$ značíme $y_n$, zatímco přesné řešení značíme $y\left(t_n\right)$. Pokud bychom chtěli najít řešení mimo naši síť $t_n$, lze buď zhustit síť $t_n$, aby pokrývala více bodů nebo je nutné použít vhodnou interpolaci, pomocí okolních bodů.
+
+Řešení počátečního problému pro diferenciální rovnice se v numerickém počtu zjednodušuje na na problém diferenčních rovnic. V každém kroku $n$ o velikosti $\tau$ tohoto zjednodušení dochází k chybě. V numerické matematice zavádíme několik druhů chyb, například lokální diskretizační chybu nebo globální diskretizační chybu. %TODO zavést síť tau, přidat formulaci úlohy, interval,vypsat jaký je rozdíl ve značení mezi numerickým a přesným řešením 
 
 \begin{defin}\label{GlobalniDiskretizacniChyba}
 	\textit{Globální diskretizační} chybu v kroku $n$ (zn. $\varepsilon_{n}$) vypočítáme jako:
@@ -748,7 +746,7 @@ Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 		\end{equation}
 	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n} \cite{Cangpin}
 	
-	\item \textbf{Lichoběžníková metoda pro pro zlomkové diferenciální rovnice}
+	\item \textbf{Theta metoda pro pro zlomkové diferenciální rovnice} %TODO předělat na theta
 			$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximovaný váženou zlomkovou obdélníkovou formulí:
 		\begin{equation} \label{C-VazenaMetoda}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} 	b_{j,n+1} \left[\theta f\left(t_{j}, y_{j}\right) + \left(1-\theta \right)f \left(t_{j+1}, y_{j+1}\right)\right],
@@ -756,7 +754,7 @@ Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 		kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}		\cite{Cangpin}
 \end{enumerate}
 
-Pokud bychom v metodách \eqref{C-PrimyEuler} \eqref{C-PrimyEuler} a \eqref{C-VazenaMetoda} uvažovali $\alpha = 1$ a $\theta = 0,5$, pak by se dané metody pro zlomkový kalkulus redukovaly na explicitní Eulerovu metodu, implicitní Eulerovu metodu a Lichoběžníkovou metodu pro klasické obecné diferenciální rovnice.
+Pokud bychom v metodách \eqref{C-PrimyEuler} \eqref{C-PrimyEuler} a \eqref{C-VazenaMetoda} uvažovali $\alpha = 1$ a $\theta = 0,5$, pak by se dané metody pro zlomkový kalkulus redukovaly na Explicitní Eulerovu metodu, Implicitní Eulerovu metodu a Theta metodu pro klasické obecné diferenciální rovnice.
 
 V další části bude pojednáno o řádu chyby výše zmíněných numerických metod
 
@@ -778,12 +776,12 @@ V další části bude pojednáno o řádu chyby výše zmíněných numerickýc
 
 \begin{veta} \label{RadEulerovyMetody}%TODO
 	Nechť funkce $y\left(t\right)$, která je řešením počátečního problému \eqref{PocUloha}, je lipschitzovská na celém intervalu $I$ problému a $f \left(t,y \left(t\right)\right)$, kde $y\left(t\right) \in C^{1}\left\langle 0, T\right\rangle$ je řešení počátečního problému které má spojité derivace,
-	$y_{n}, \left(1 \leq n \leq N\right)$ jsou řešení lichoběžníkové metody pro diferenciální rovnice \eqref{C-VazenaMetoda}. Pak platí
+	$y_{n}, \left(1 \leq n \leq N\right)$ jsou řešení Theta metody pro diferenciální rovnice \eqref{C-VazenaMetoda}. Pak platí
 	
 	\begin{equation}
 		|y\left(t_{n+1}\right) - y_{n+1}| \leq C\cdot \tau, \qquad n = 0,1, ..., N-1,
 	\end{equation} 
-	kde $C$ je pozitivní konstanta nezávislá od velikosti kroku $\tau$  a $k$. Pak řekneme že lichoběžníková metoda \eqref{C-VazenaMetoda} je tedy metoda prvního řádu $O\left(\tau\right)$. \cite{Cangpin}
+	kde $C$ je pozitivní konstanta nezávislá od velikosti kroku $\tau$  a $k$. Pak řekneme že Theta metoda \eqref{C-VazenaMetoda} je tedy metoda prvního řádu $O\left(\tau\right)$. \cite{Cangpin}
 \end{veta}
 Provedeme důkaz věty \ref{RadEulerovyMetody} pro dostatečně malý krok $\tau$
 \begin{proof}%né metody z \ref{RadEulerovyMetody}]
@@ -814,7 +812,7 @@ Provedeme důkaz věty \ref{RadEulerovyMetody} pro dostatečně malý krok $\tau
 	\begin{equation}
 		\frac{L_{2}\tau^{\alpha}\left(1-\theta\right)}{\Gamma\left(\alpha+1\right)} < 1
 	\end{equation}
-	(To můžeme zvolit protože $L_{2}$ je konstanta nezávislá na kroku $\tau$, $\alpha$ závisí pouze na počáteční úloze a $\theta$  je volený parametr lichoběžníkové metody.)
+	(To můžeme zvolit protože $L_{2}$ je konstanta nezávislá na kroku $\tau$, $\alpha$ závisí pouze na počáteční úloze a $\theta$  je volený parametr Theta metody.)
 	Lze zavést
 	$$C = \frac{K}{1 - \frac{L_{2}\tau^{\alpha}\left(1-\theta\right)}{ \Gamma\left(\alpha+1\right)}}$$
 	\begin{equation}
@@ -823,10 +821,10 @@ Provedeme důkaz věty \ref{RadEulerovyMetody} pro dostatečně malý krok $\tau
 	Aplikací Lemma \ref{LemmaOGlobChybe} dospíváme k dokazovanému výsledku. 
 \end{proof}
 
-Jelikož parametr $\theta$ v lichoběžníkové metodě \eqref{C-VazenaMetoda} zobecňuje explicitní eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \ref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
+Jelikož parametr $\theta$ v Theta metodě \eqref{C-VazenaMetoda} zobecňuje explicitní eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \ref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
 
 \begin{veta} [O stabilitě Eulerových numerických metod] \label{StabilityOfEuler}
-	Uvažujme $y_{n}$, kde $n = 1,2,...,N+1$ řešení počátečního problému \eqref{PocUloha}, získané lichoběžníkovou metodou pro zlomkové diferenciální rovnice \eqref{C-VazenaMetoda}. Nechť funkce $f\left(t,y\right)$ splňuje Lipschitzovu podmínku vzhledem k druhému argumentu $y$ a s konstantní Lipschitzovou konstantou $L$ na celém intervalu $I$, na kterém je hledáno řešení. Pak lichoběžníková metoda pro zlomkové diferenciální rovnice je stabilní.
+	Uvažujme $y_{n}$, kde $n = 1,2,...,N+1$ řešení počátečního problému \eqref{PocUloha}, získané Theta metodou pro zlomkové diferenciální rovnice \eqref{C-VazenaMetoda}. Nechť funkce $f\left(t,y\right)$ splňuje Lipschitzovu podmínku vzhledem k druhému argumentu $y$ a s konstantní Lipschitzovou konstantou $L$ na celém intervalu $I$, na kterém je hledáno řešení. Pak Theta metoda pro zlomkové diferenciální rovnice je stabilní.
 \end{veta}
 Stabilitou v tomto smyslu myslíme, že  malé změny v počátečních podmínkách nevyvolají velké změny v řešení rovnic.
 
@@ -895,7 +893,7 @@ Předpokládejme splnění předpokladů věty \ref{StabilityOfEuler} pro parame
 		\hline
 		$\varepsilon_{\left(t=10\right)}$ & & $ 2.33 \cdot 10^{0}$ & $2.61 \cdot 10^{-1}$ & $2.70 \cdot 10^{-2}$ & $2.73\cdot 10^{-3}$ & $2.74 \cdot 10^{-4}$ \\
 		\hline\hline
-		\multicolumn{7}{|l|}{Lichoběžníková Eulerova metoda pro zlomkový kalkulus s parametrem $\theta = 0.5$} \\
+		\multicolumn{7}{|l|}{Theta Eulerova metoda pro zlomkový kalkulus s parametrem $\theta = 0.5$} \\
 		\hline
 		$y\left(1\right)$ & $1$ & $1.867$ & $1.1709$ & $1.0413$ & $1.0117$ & $1.0035$  \\
 		\hline
@@ -936,7 +934,7 @@ Předpokládejme splnění předpokladů věty \ref{StabilityOfEuler} pro parame
 	
 	Výsledky jsou zapsané v tabulkách \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.1} pro $\alpha = 1.1$, \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} pro $\alpha = 1.5$ a \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro $\alpha = 1.9$. 
 	
-	V tabulkách \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} a \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro příklad  po řadě $\alpha = 1.5$ a $\alpha 1.9$  je vidět přesný odhad pro řád numerických metod (připomeňme, že lichoběžníková metoda s parametrem $\theta$ pro $\theta = 0$ a  $\theta = 1$ je shodná s implicitní Eulerovou metodou explicitní Eulerovou metodou). Pro tabulku s derivací $\alpha =1.1$ a parametrem $\theta = 0.7$ a $\theta = 1$ vychází vyšší odhad řádu konvergence EOC, což může být způsobenou specifikem příkladu a zvolených parametrů nebo pro vyšší počet kroků $N$ i zaokrouhlovacími chybami.
+	V tabulkách \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} a \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro příklad  po řadě $\alpha = 1.5$ a $\alpha 1.9$  je vidět přesný odhad pro řád numerických metod (připomeňme, že Theta metoda s parametrem $\theta$ pro $\theta = 0$ a  $\theta = 1$ je shodná s implicitní Eulerovou metodou explicitní Eulerovou metodou). Pro tabulku s derivací $\alpha =1.1$ a parametrem $\theta = 0.7$ a $\theta = 1$ vychází vyšší odhad řádu konvergence EOC, což může být způsobenou specifikem příkladu a zvolených parametrů nebo pro vyšší počet kroků $N$ i zaokrouhlovacími chybami.
 \end{prikl}
 
 
