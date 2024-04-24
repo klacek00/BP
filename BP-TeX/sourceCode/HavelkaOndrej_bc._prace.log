@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  20 APR 2024 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  22 APR 2024 03:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,7 +831,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<VUT.pdf, id=51, 290.21623pt x 100.99733pt>
+<VUT.pdf, id=55, 290.21623pt x 100.99733pt>
 File: VUT.pdf Graphic file (type pdf)
 <use VUT.pdf>
 Package pdftex.def Info: VUT.pdf  used on input line 115.
@@ -935,7 +935,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 13.968pt on input line 116.
-<FSI.pdf, id=52, 252.10085pt x 99.58505pt>
+<FSI.pdf, id=56, 252.10085pt x 99.58505pt>
 File: FSI.pdf Graphic file (type pdf)
 <use FSI.pdf>
 Package pdftex.def Info: FSI.pdf  used on input line 119.
@@ -955,8 +955,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--131
 pdfTeX warning: pdflatex.exe (file ./zav_prace__6a47feaede907e7e33a4b03780487b6
 3.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<zav_prace__6a47feaede907e7e33a4b03780487b63.pdf, id=98, 597.51233pt x 845.0471
-pt>
+<zav_prace__6a47feaede907e7e33a4b03780487b63.pdf, id=102, 597.51233pt x 845.047
+1pt>
 File: zav_prace__6a47feaede907e7e33a4b03780487b63.pdf Graphic file (type pdf)
 <use zav_prace__6a47feaede907e7e33a4b03780487b63.pdf>
 Package pdftex.def Info: zav_prace__6a47feaede907e7e33a4b03780487b63.pdf  used 
@@ -988,66 +988,66 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 250.
  [11]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.6215pt on input line 284.
+(Font)              scaled to size 10.6215pt on input line 285.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 284.
+(Font)              scaled to size 7.76001pt on input line 285.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.917pt on input line 284.
+(Font)              scaled to size 5.917pt on input line 285.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 284.
+(Font)              scaled to size 6.40501pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 284.
+(Font)              scaled to size 11.49753pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 284.
+(Font)              scaled to size 8.40002pt on input line 285.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 284.
-<Gamma+.jpg, id=188, 1927.2pt x 958.58125pt>
+(Font)              scaled to size 6.40501pt on input line 285.
+<Gamma+.jpg, id=193, 1927.2pt x 958.58125pt>
 File: Gamma+.jpg Graphic file (type jpg)
 <use Gamma+.jpg>
-Package pdftex.def Info: Gamma+.jpg  used on input line 286.
+Package pdftex.def Info: Gamma+.jpg  used on input line 287.
 (pdftex.def)             Requested size: 483.69687pt x 240.58084pt.
  [12 <./Gamma+.jpg>] [13]
-<fracGammaPlot.png, id=214, 1163.0652pt x 620.5584pt>
+<fracGammaPlot.png, id=219, 1163.0652pt x 620.5584pt>
 File: fracGammaPlot.png Graphic file (type png)
 <use fracGammaPlot.png>
-Package pdftex.def Info: fracGammaPlot.png  used on input line 391.
+Package pdftex.def Info: fracGammaPlot.png  used on input line 392.
 (pdftex.def)             Requested size: 483.69687pt x 258.07613pt.
  [14]
-Overfull \hbox (7.5418pt too wide) in paragraph at lines 408--410
+Overfull \hbox (7.5418pt too wide) in paragraph at lines 409--411
 \T1/XCharter-TLF/m/n/12 (-20) je $3\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 
 (-20) 509485382540145 \LMS/ntxsy/m/n/12 ^^A \T1/XCharter-TLF/m/n/12 (-20) 10[]$
  a re-la-tivní roz-díl t¥chto vy-po£te-ných hod-not je $\LMS/ntxsy/m/n/12 ^^Y \
@@ -1056,34 +1056,34 @@ T1/XCharter-TLF/m/n/12 (-20) 5\OML/nxlmi/m/it/12 :\T1/XCharter-TLF/m/n/12 (-20)
  []
 
 [15 <./fracGammaPlot.png (PNG copy)>] [16] [17] [18]
-<FractionalOscillator_AnalyticalSolution.pdf, id=287, 649.42625pt x 355.3275pt>
+<FractionalOscillator_AnalyticalSolution.pdf, id=292, 649.42625pt x 355.3275pt>
 
 File: FractionalOscillator_AnalyticalSolution.pdf Graphic file (type pdf)
 <use FractionalOscillator_AnalyticalSolution.pdf>
 Package pdftex.def Info: FractionalOscillator_AnalyticalSolution.pdf  used on i
-nput line 619.
+nput line 620.
 (pdftex.def)             Requested size: 483.69687pt x 264.65695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 742--744
+[19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21] [22]
+Overfull \hbox (8.17236pt too wide) in paragraph at lines 753--755
 []\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
  di-fe-ren-ci-ální rov-nice: $[][]$
  []
 
-[22]
-Overfull \hbox (16.77112pt too wide) detected at line 810
+[23]
+Overfull \hbox (16.77112pt too wide) detected at line 821
 [][][][][]
  []
 
-[23] [24]
+[24]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (31.55031pt too wide) in paragraph at lines 946--974
+[25]
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 956--984
  [][] 
  []
 
@@ -1091,7 +1091,7 @@ Overfull \hbox (31.55031pt too wide) in paragraph at lines 946--974
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 978--1008
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 988--1018
  [][] 
  []
 
@@ -1099,25 +1099,21 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 978--1008
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1014--1042
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1024--1052
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26]
-Underfull \vbox (badness 2671) has occurred while \output is active []
-
- [27]
-[28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1166--1167
+[26] [27] [28] [29]
+Underfull \hbox (badness 1655) in paragraph at lines 1176--1177
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1166--1167
+Underfull \hbox (badness 1102) in paragraph at lines 1176--1177
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
@@ -1131,16 +1127,16 @@ L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 .
-(rerunfilecheck)             Checksum: 3CE35D03DE315D83236ABFAA9544106C;2338.
+(rerunfilecheck)             Checksum: 94C621DA0616C0B575CE52D6E1970C2D;2625.
  ) 
 Here is how much of TeX's memory you used:
- 20038 strings out of 474386
- 319211 string characters out of 5750702
- 1998496 words of memory out of 5000000
- 41609 multiletter control sequences out of 15000+600000
- 710491 words of font info for 340 fonts, out of 8000000 for 9000
+ 20040 strings out of 474386
+ 319241 string characters out of 5750702
+ 1993496 words of memory out of 5000000
+ 41610 multiletter control sequences out of 15000+600000
+ 710577 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,117p,1128b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,117p,1128b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
 rams/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI7.pfb><D:/programs/TeX/
 Instal/fonts/type1/public/newtx/LibertineMathRM.pfb><D:/programs/TeX/Instal/fon
@@ -1152,9 +1148,9 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2293711 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2294388 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 63615 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 63623 words of extra memory for PDF output out of 74296 (max. 10000000)
 

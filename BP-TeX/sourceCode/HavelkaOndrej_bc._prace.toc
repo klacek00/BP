@@ -5,9 +5,10 @@
 \contentsline {subsection}{\numberline {2.1}Speciální funkce}{12}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Zlomková derivace a integrál}{16}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Zlomkové diferenciální rovnice}{18}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Numerické metody pro zlomkové diferenciální rovnice}{20}{section.3}%
+\contentsline {subsection}{\numberline {2.4}Využití zlomkových diferenciálních rovnic}{18}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Numerické metody pro zlomkové diferenciální rovnice}{21}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Základní pojmy numerického počtu}{21}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Algoritmy pro výpočet Caputovy derivace}{22}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Algoritmy pro řešení diferenciálních rovnic Caputova typu}{22}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Testovací úlohy}{25}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Závěr}{28}{section.4}%
+\contentsline {section}{\numberline {4}Závěr}{29}{section.4}%
