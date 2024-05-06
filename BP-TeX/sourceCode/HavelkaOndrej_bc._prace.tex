@@ -124,10 +124,10 @@
 }
 
 \vspace{4cm}\noindent
-{\normalfont\sffamily\Large\textmd{ZLOMKOVÉ DIFERENCIÁLNÍ ROVNICE CAPUTOVA TYPU -\\[2mm]
-		NUMERICKÁ ANALÝZA}}
+{\normalfont\sffamily\Large\textmd{ZLOMKOVÉ DIFERENCIÁLNÍ ROVNICE CAPUTOVA TYPU \\[2mm]
+		-- NUMERICKÁ ANALÝZA}}
 \\[5mm]
-{\normalfont\sffamily\textmd{CAPUTO TYPE FRACTIONAL DIFFERENTIAL EQUATIONS - NUMERICAL ANALYSIS\\[0.5mm] }}
+{\normalfont\sffamily\textmd{CAPUTO TYPE FRACTIONAL DIFFERENTIAL EQUATIONS -- NUMERICAL ANALYSIS\\[0.5mm] }}
 	
 \vspace{5cm}\noindent
 {\tflarge{BAKALÁŘSKÁ PRÁCE}}\\
@@ -153,7 +153,7 @@
 \thispagestyle{empty}
 \noindent
 {\bf Abstrakt}\\[1mm]
-Bakalářská práce se zabývá zlomkovými diferenciálními rovnicemi Caputova typu. Jsou uvedeny některé základní pojmy zlomkového kalkulu. Následně jsou představeny zlomkové derivace a integrál, no což navazuje formulace počáteční úlohy pro neceločíselné diferenciální rovnice. V oblasti numerických metod je práce zaměřena na Eulerovy metody, které jsou otestovány na několika vybraných úlohách.
+Bakalářská práce se zabývá zlomkovými diferenciálními rovnicemi Caputova typu. Jsou uvedeny některé základní pojmy zlomkového kalkulu. Následně jsou představeny zlomkové derivace a~integrál, na což navazuje formulace počáteční úlohy pro neceločíselné diferenciální rovnice. V~oblasti numerických metod je práce zaměřena na Eulerovy metody, které jsou otestovány na~několika vybraných úlohách.
 
 \vspace{1cm}\noindent
 {\bf Abstract}\\[1mm]
@@ -170,7 +170,7 @@ Zlomkové diferenciální rovnice, Caputova derivace, Eulerovy metody pro zlomko
 Fractional differential equations, Caputo derivative, Fractional Euler methods, Mittag-Leffler function.
 
 \vfill\noindent
-Havelka, O.: {\it ZLOMKOVÉ DIFERENCIÁLNÍ ROVNICE CAPUTOVA TYPU - NUMERICKÁ ANALÝZA}, Brno: Vysoké učení technické v Brně, Fakulta strojního inženýrství, 2024. 30 s. Vedoucí bakalářské práce doc. Ing. Petr Tomášek, Ph.D.
+Havelka, O.: {\it ZLOMKOVÉ DIFERENCIÁLNÍ ROVNICE CAPUTOVA TYPU -- NUMERICKÁ ANALÝZA}, Brno: Vysoké učení technické v Brně, Fakulta strojního inženýrství, 2024. 30 s. Vedoucí bakalářské práce doc. Ing. Petr Tomášek, Ph.D.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -184,7 +184,7 @@ Havelka, O.: {\it ZLOMKOVÉ DIFERENCIÁLNÍ ROVNICE CAPUTOVA TYPU - NUMERICKÁ A
 \
 
 \vspace{15cm}\noindent Prohlašuji, že jsem bakalářskou práci {\it
-Zlomkové diferenciální rovnice Caputova typu - Numerická analýza} vypracoval samostatně pod
+Zlomkové diferenciální rovnice Caputova typu -- Numerická analýza} vypracoval samostatně pod
 vedením doc. Ing. Petra Tomáška Ph.D. s použitím materiálů uvedených
 v seznamu literatury.
 
@@ -236,25 +236,27 @@ v seznamu literatury.
 \section{Úvod}
 %\subsection{Historie zlomkového kalkulu}
 
-Problematika neceločíselných derivací je stará téměř jako běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy. Jak se ale v této práci později naznačí, nejedná se o pravé zobecnění, jelikož lze zlomkovou derivaci zadefinovat vícero neekvivalentími způsoby. 
+Problematika neceločíselných derivací je stará téměř jako problematika běžných celočíselných derivací a ukazuje touhu matematiků zobecňovat problémy. Jak se ale v této práci později naznačí, nejedná se o pravé zobecnění, jelikož lze zlomkovou derivaci zadefinovat vícero neekvivalentími způsoby. 
 
-Poprvé se s neceločíselné derivaci dostaneme nedlouho po roce 1676, kdy Gottfried Wilhelm Leibniz představil svoji teorii diferenciálního počtu. Již v roce 1695 se Guillaume de L'Hospital ve své korespondenci s G. W. Leibnizem táže na interpretaci půlté derivace funkce $y\left(x\right)$, neboli  $n = 1/2$ ve výrazu ${d^{n}y\left(x\right)}/{dx^{n}}$. G. W. Leibniz tehdy odpověděl, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$", což se později ukázalo jako nepřesné. O paradoxu, který svým tvrzením způsobil pojednává například A. Hilfer ve druhé kapitole \cite{LeibnitzFail}.
+%TODO objasnit jestli l'Hospital malé nebo velké L
+Poprvé se k neceločíselné derivaci dostaneme nedlouho po roce 1676, kdy Gottfried Wilhelm Leibniz představil svoji teorii diferenciálního počtu. Již v roce 1695 se Guillaume de L'Hospital ve své korespondenci s G. W. Leibnizem táže na interpretaci půlté derivace funkce $y\left(x\right)$ neboli  $n = 1/2$ ve výrazu ${d^{n}y\left(x\right)}/{dx^{n}}$. G. W. Leibniz tehdy odpověděl, že "$dx^{\frac{1}{2}} = x \cdot \sqrt[]{dx :x}$", což se později ukázalo jako nepřesné. O paradoxu, který svým tvrzením způsobil, pojednává například A.~Hilfer ve druhé kapitole \cite{LeibnitzFail}.
 
-V následujících staletích se svými definicemi neceločíselných derivací či integrálů přicházeli postupně Leonhard Paul Euler (1730), Jean Baptiste Joseph Fourier (1820-1822), Niels Henrik Abel (1823-1826), Joseph Liouville (1832-1855), Georg Friedrich Bernhard Riemann  (1847-1876), Michele Caputo (1967)  a další. 
-V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zaměřena a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. Cílem práce je zpracovat základní přístupy numerického řešení těchto problémů a ověřit jejich přesnost a řád konvergence na testovacích úlohách.
+V následujících staletích se svými definicemi neceločíselných derivací či integrálů přicházeli postupně Leonhard Paul Euler (1730), Jean Baptiste Joseph Fourier (1820--1822), Niels Henrik Abel (1823--1826), Joseph Liouville (1832--1855), Georg Friedrich Bernhard Riemann  (1847--1876), Michele Caputo (1967)  a další. 
+V~dnešní době se pak nejčastěji využívají Riemann-Liouvillova derivace a Caputova derivace, na kterou bude práce zaměřena, a to zejména na řešení počátečních úloh zlomkových diferenciálních rovnic. Cílem práce je zpracovat základní přístupy numerického řešení těchto problémů a ověřit jejich přesnost a řád konvergence na testovacích úlohách.
 
 %TODO následující kapitola bude celá předělaná podle toho, jak nové kapitoly zrovna vycházejí
-V druhé kapitole jsou zadefinovány gama a Mittag-Lefflerova funkce, zároveň je i krátce pojednáno o možnosti výpočtu funkční hodnoty Mittag-Leflerovy funkce. Ve třetí kapitole se zavádí pojmy Riemann-Liouvillův integrál a je krátce pojednáno o některých vlastnostech Caputovy derivace. Ve 4. kapitole je zavedena počáteční úloha zlomkových diferenciálních rovnic a věty o existenci a jednoznačnosti řešení této rovnice. V páté kapitole se ukáže využití zlomkových diferenciálních rovnic pro modelování mechanického oscilátoru. V šesté kapitole se nejprve zavedou některé pojmy numerického počtu a následně se představí numerické algoritmy pro výpočet Caputovy derivace a počátečních úloh zlomkových diferenciálních rovnic pomocí Eulerových metod. Jejich implementace v prostředí Matlab je součástí přílohy této bakalářské práce. V sedmé kapitole budou algoritmy zpracované v programu Matlab otestovány na vybraných úlohách a numerické řešení bude porovnáno s analytickým řešením.
+Ve druhé kapitole jsou zadefinovány gama a Mittag-Lefflerova funkce, zároveň je i krátce pojednáno o možnosti výpočtu funkční hodnoty Mittag-Lefflerovy funkce. Ve třetí kapitole se zavádí pojem Riemann-Liouvillův integrál a je krátce pojednáno o některých vlastnostech Caputovy derivace. Dále je zavedena počáteční úloha zlomkových diferenciálních rovnic a věty o existenci a jednoznačnosti řešení této rovnice. Na konci druhé kapitoly se ukáže využití zlomkových diferenciálních rovnic pro modelování mechanického oscilátoru. 
+Ve třetí kapitole se nejprve zavedou některé pojmy numerického počtu a následně se představí numerické algoritmy pro výpočet Caputovy derivace a počátečních úloh zlomkových diferenciálních rovnic pomocí Eulerových metod. Jejich implementace v prostředí Matlab je součástí přílohy této bakalářské práce. Na konci této kapitoly budou algoritmy zpracované v programu Matlab otestovány na vybraných úlohách a numerické řešení bude porovnáno s analytickým řešením.
 
 \subsection{Motivační úloha} 
-Zlomkové diferenciální úlohy plní svou úlohu v řadě technických a vědních oborů. Jako jedna z historicky prvních úloh spojená se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky po které je doba "klouzání " hmotného bodu $ T$ v homogenním tíhovém poli nezávislá na počáteční poloze. Touto úlohou se zabýval již výše zmíněný N. H. Abel, který popsal tento problém integrální rovnice:
+Zlomkové diferenciální úlohy plní svou úlohu v řadě technických a vědních oborů. Jako jednu z~historicky prvních úloh spojených se zlomkovou derivací se dá považovat úloha tautochrony, tedy křivky, po které je doba "klouzání " hmotného bodu $ T$ v homogenním tíhovém poli nezávislá na počáteční poloze. Touto úlohou se zabýval již výše zmíněný N. H. Abel, který popsal tento problém integrální rovnice:
 
 \begin{equation} \label{AbelovaUloha}
 		\sqrt[]{2g}T = \int_{0}^{\eta } \left( \eta - y\right) ^{-\frac{1}{2}} f'\left( y\right) \dx{y},
 \end{equation}
-kde $g$ je gravitační zrychlení $\eta$ je počáteční poloha tělesa na ose $y$ a $f\left(y\right) $ je  rovnicí křivky.
+kde $g$ je gravitační zrychlení, $\eta$ je počáteční poloha tělesa na ose $y$ a $f\left(y\right) $ je  rovnicí křivky.
 %úlohu více a přesněji rozepsat
-V následujících letech se ukázalo, že tato integrální rovnice \eqref{AbelovaUloha} odpovídá zlomkové diferenciální rovnici: %TODO 
+V následujících letech se ukázalo, že tato integrální rovnice \eqref{AbelovaUloha} odpovídá zlomkové diferenciální rovnici:
 
 $$
 	\sqrt[]{2g}T = \Gamma\left( 0.5 \right) \cdot _{0}\!D_{\eta}^{-\frac{1}{2}} f'\left( \eta \right), 
@@ -264,13 +266,13 @@ kde operátor zlomkové derivace $_{0}\!D_{\eta}^{-\frac{1}{2}}$ je zadefinován
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Základní pojmy}
-Ve druhé kapitole budou představeny definice, se kterými se bude v práci pracovat. V první podkapitole to budou dvě speciální funkce, gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazu. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
+Ve druhé kapitole budou představeny definice, se kterými se bude v práci pracovat. V první podkapitole to budou dvě speciální funkce, gama funkce a následně Mittag-Lefflerova funkce. Věty uvádějící vztahy speciálních funkcí budou zde udány bez důkazů. Ty je možné najít v \cite{Podlubny} a v literatuře tam uvedené.
 Ve druhé podkapitole budou představeny stěžejní definice Riemann-Liouvillova integrálu i derivace a poté i Caputovy derivace, společně s některými důležitými vlastnostmi.
-Třetí podkapitola představí zlomkové diferenciální rovnice a uvede větu o jednoznačnosti řešení počátečních úloh. V poslední části této podkapitoly se ukáže příklad využití zlomkových diferenciálních rovnic při modelováni kmitání tlumeného mechanického oscilátoru.
+Třetí podkapitola představí zlomkové diferenciální rovnice a uvede větu o jednoznačnosti řešení počátečních úloh. V poslední části této podkapitoly bude ukázán příklad využití zlomkových diferenciálních rovnic při modelování kmitání tlumeného mechanického oscilátoru.
 \subsection{Speciální funkce}
 \textbf{Gama funkce} \\
-Jako první ze speciálních funkcí nutnou pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladných reálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
-Při shrnutí poznatků o Gama funkci je užito literatury \cite{Bashour}
+Jako první ze speciálních funkcí nutných pro vstup do zlomkového kalkulu je gama funkce, která je funkcí zobecňující faktoriál. Tímto zobecněním myslíme zbavení se pout přirozených čísel a vstup do čísel kladných reálných. Gama funkci je sice možné definovat obecněji a to na oboru komplexních čísel, avšak pro účely této práce je zobecnění na kladná reálná čísla více než dostatečné.
+Při shrnutí poznatků o gama funkci je použita literatura \cite{Bashour}.
  
 \begin{defin}{\emph{Gama funkce}} \label{GammaFunkce}
 	Nechť $z \in \R ^{+}$, pak hodnota \emph{gama funkce} v bodě z je dána vztahem
@@ -323,7 +325,7 @@ Mittag-Lefflerova funkce v oblasti zlomkových diferenciálních rovnic předsta
 
 I přes velký význam se však jedná o funkci opominutou ve většině běžně dostupného softwaru. Výjimkou v tomto není ani Matlab R2022b, který je v této práci využit.
 
-\begin{defin}\label{DefinMLfce} %[Dvouparametrická Mittag-Leflerova funkce]
+\begin{defin}\label{DefinMLfce} %[Dvouparametrická Mittag-Lefflerova funkce]
 	\emph{Mittag-Lefflerova funkce} s parametry $\alpha, \beta \in \R^{+}$ v bodě $z$ je značena $E_{\alpha, \beta} \left( z\right)$ a je definována součtem nekonečné mocninné řady
 	$$
 	E_{\alpha, \beta} \left( z\right) =  \sum_{k=0}^{\infty} \frac{z^{k}}{\Gamma\left( \alpha k +\beta \right)}, \qquad \forall z \in  \R.  	
@@ -331,28 +333,29 @@ I přes velký význam se však jedná o funkci opominutou ve většině běžn�
 \end{defin}
 
 %TODO upravit
-Existuje také jednoparametrická Mittag-Leflerova funkce je možné také zjednodušit. Při položení parametru $\beta = 1$ se taková funkce nazývá jednoparametrická Mittag-Leflerova funkce.
+Při položení parametru $\beta = 1$ se taková funkce nazývá jednoparametrická Mittag-Lefflerova funkce.
 
 %Další definice naopak přidává parametr $\gamma$.
-%\begin{defin} [Tříparametrická Mittag-Leflerova funkce]
+%\begin{defin} [Tříparametrická Mittag-Lefflerova funkce]
 	%$$E_{\alpha, \beta}^{\gamma} \left( z\right) = \sum_{k=0}^{\infty}  \frac{\Gamma \left(\gamma + k\right) \cdot z^{k}}{k! \cdot \Gamma \left(\alpha k + \beta\right)}$$
 %\end{defin}
 %Je zřejmé, že při použití $\gamma = 1$ a znalostí z \eqref{gamma} si jsou dvouparametrická a tříparametrická definice ekvivalentní.
 
-Pro případ, kdy se $\alpha = 0$ není Mittag-Leflerova funkce výše definovaná, jelikož v takovém případě není zaručena konvergence řady. Dodefinování při $|z| < 1$ již není problematické, jelikož se tento případ zjednoduší na geometrickou řadu, pro kterou explicitně známe řešení. Mittag-Lefflerovu funkci v bodě $z$ s parametry $\alpha = 0, \beta > 0$ definujeme jako:
+Pro případ, kdy $\alpha = 0$ není Mittag-Lefflerova funkce výše definovaná, jelikož v takovém případě není zaručena konvergence řady. Dodefinování při $|z| < 1$ již není problematické, jelikož se tento případ zjednoduší na geometrickou řadu, pro kterou explicitně známe řešení. Mittag-Lefflerovu funkci v bodě $z$ s parametry $\alpha = 0, \beta > 0$ definujeme jako:
 %Pro speciální případ se dodefinováva ML fce
 \begin{equation}
-	E_{0, \beta}\left(z\right) = \frac{1}{\Gamma \left(\beta\right)\cdot \left(1-z\right)}, \qquad \forall z \in \R: |z| < 1
+	E_{0, \beta}\left(z\right) = \frac{1}{\Gamma \left(\beta\right)\cdot \left(1-z\right)}, \qquad \forall z \in \R: |z| < 1.
 \end{equation}
 
-\textbf{Definiční obor Mittag-Leflerovy funkce} \\
-Přirozenou otázka u sumární definice Mittag-Leflerovy funkce vyvolává její definiční obor, respektive obor konvergence mocninné řady. 
+\textbf{Definiční obor Mittag-Lefflerovy funkce} \\
+Přirozenou otázka u sumární definice Mittag-Lefflerovy funkce vyvolává její definiční obor, respektive obor konvergence mocninné řady. 
 K ukázání definičního oboru lze použít známé limitní podílové kritérium. Parametr $\rho$ lze vypočítat jako podíl po sobě jdoucích členů nekonečné řady v limitě, kdy pro člen $a_k$, $k \rightarrow \infty $.
 
-$$\rho = \lim_{k\to\infty} \frac{a_{k+1} }{a_{k}} = \lim_{k\to\infty} \frac{\frac{z^{k+1}}{\Gamma\left( \alpha \left(k+1\right) +\beta \right)}}{\frac{z^{k}}{\Gamma\left( \alpha k +\beta \right)} } = z \cdot \frac{\Gamma\left( \alpha k +\beta \right)}{\Gamma\left( \alpha \left(k+1\right) +\beta \right)} = ... = 0$$
-Pro poloměr konvergence okolo bodu 0 potom platí, že se jedná o inverzní hodnotu k parametru $\rho$,tedy
+$$\rho = \lim_{k\to\infty} \frac{a_{k+1} }{a_{k}} = \lim_{k\to\infty} \frac{\frac{z^{k+1}}{\Gamma\left( \alpha \left(k+1\right) +\beta \right)}}{\frac{z^{k}}{\Gamma\left( \alpha k +\beta \right)} } = z \cdot \frac{\Gamma\left( \alpha k +\beta \right)}{\Gamma\left( \alpha \left(k+1\right) +\beta \right)} = ... = 0.$$
+%todo jak vyřešit odsazení na více místech v textu
+Pro poloměr konvergence okolo bodu 0 potom platí, že se jedná o inverzní hodnotu k parametru $\rho$, tedy
 $$R = \frac{1}{\rho} = \infty$$
-Nekonečný poloměr konvergence okolo $0$ říká, že řada konverguje na celé reálné ose a tedy pro parametry $\alpha > 0$ a $\beta > 0$ je Mittag-Leflerova funkce definovaná na celé reálné ose.
+Nekonečný poloměr konvergence okolo $0$ říká, že řada konverguje na celé reálné ose a tedy pro parametry $\alpha > 0$ a $\beta > 0$ je Mittag-Lefflerova funkce definovaná na celé reálné ose.
 
 \textbf{Výpočet funkčních hodnot Mittag-Lefflerovy funkce}\label{DefOMLfce} \\
 V této části bude blíže rozebrána možnost výpočtu hodnot Mittag-Lefflerovy funkce. Jelikož je samotná funkce zadefinovaná jako mocninná řada \eqref{DefinMLfce}, nabízí se tuto řadu sečíst.
@@ -366,25 +369,25 @@ Chybou $n$-tého částečného součtu $Err$ řady Mittag-Lefflerovy funkce pak
 	Err \left(E_{\alpha, \beta} \left( z\right)\right) = \lim_{L\to \infty} \sum_{k=n+1}^{L} \frac{z^{k}}{\Gamma\left( \alpha k +\beta \right)} \space \space \left( \alpha > 0, \beta > 0 \right).
 \end{equation}
 
-Mocninou řadu se tedy pokusíme shora omezit pomocí podobné geometrické řady, na kterou postačí středoškolský vzoreček:
+Mocninnou řadu se tedy pokusíme shora omezit pomocí podobné geometrické řady, na kterou postačí středoškolský vzoreček:
 
 \begin{equation}\label{SoucetGeometrickeRady}
-	S = \sum_{k=0}^{\infty} a_{k} = \frac{a_{0}}{1-q}
+	S = \sum_{k=0}^{\infty} a_{k} = \frac{a_{0}}{1-q}.
 \end{equation} 
 
-Kde značíme součet $S$, řadu A $\left[a\right]_{0}^{\infty}$ s~kvocientem $q$ a prvním členem řady $a_0$. Přičemž $ |q| < 1$.
+Kde značíme součet $S$, řadu A $\left[a\right]_{0}^{\infty}$ s~kvocientem $q$ a první člen řady $a_0$. Přičemž $ |q| < 1$.
 
-Jelikož gama funkce na celém svém definičním oboru není prostá, budeme uvažovat chybu částečných součtů pouze pro $N \in \N$ takové, že platí: $\alpha N + \beta > 2$
+Jelikož gama funkce na celém svém definičním oboru není prostá, budeme uvažovat chybu částečných součtů pouze pro $N \in \N$ takové, že platí: $\alpha N + \beta > 2$.
 % a kde $h$ je celá část $\alpha n$
-Jelikož v předchozí kapitole \ref{DefOMLfce} bylo ukázáno, že ředa pro ML funkci je konvergentní na celém reálném oboru, od určitého členu řady $a_j$ musí platit:
-$$1 > \frac{ a_{j+1}}{a_{j}} = \frac{\frac{z^{j+1}}{\Gamma\left(\alpha \left(j+1\right) + \beta\right)}}{\frac{z^{j}}{\Gamma\left(\alpha j + \beta\right)}} = z \cdot \frac{\Gamma \left(\alpha j + \beta\right)}{\Gamma \left(\alpha \left(j+1\right) + \beta\right)} = q$$
+Jelikož v předchozí kapitole \ref{DefOMLfce} bylo ukázáno, že řada pro Mittag-Lefflerovu funkci je konvergentní na celém reálném oboru, od určitého členu řady $a_j$ musí platit:
+$$1 > \frac{ a_{j+1}}{a_{j}} = \frac{\frac{z^{j+1}}{\Gamma\left(\alpha \left(j+1\right) + \beta\right)}}{\frac{z^{j}}{\Gamma\left(\alpha j + \beta\right)}} = z \cdot \frac{\Gamma \left(\alpha j + \beta\right)}{\Gamma \left(\alpha \left(j+1\right) + \beta\right)} = q.$$
 
-V daném případě je tedy možné chybu součtu mocninné řady \eqref{ChybaSouctuRady}, rozdělit na součet konečné a geometrické řady \eqref{SoucetGeometrickeRady} 
+V daném případě je tedy možné chybu součtu mocninné řady \eqref{ChybaSouctuRady} rozdělit na součet konečné a geometrické řady \eqref{SoucetGeometrickeRady} 
 
-$$	Err_{N} \left(E_{\alpha, \beta} \left( z\right)\right) = \sum_{k=N}^{\infty} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} = \sum_{k=N}^{j-1} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} +\sum_{i=j}^{\infty} \frac{z^{j}}{\Gamma\left( \alpha i + \beta \right)} \leq \sum_{k=N}^{j-1} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} + \frac{a_{j}}{1-q} $$
+$$	Err_{N} \left(E_{\alpha, \beta} \left( z\right)\right) = \sum_{k = N}^{\infty} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} = \sum_{k=N}^{j-1} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} +\sum_{i=j}^{\infty} \frac{z^{j}}{\Gamma\left( \alpha i + \beta \right)} \leq \sum_{k=N}^{j-1} \frac{z^{k}}{\Gamma\left( \alpha k + \beta \right)} + \frac{a_{j}}{1-q} $$
 
 Získaná nerovnice vypadá užitečně. V praxi však naráží na problém.
-Totiž, podíl: $\frac{\Gamma \left(\alpha j + \beta\right)}{\Gamma \left(\alpha \left(j+1\right) + \beta\right)}$,pro malý parametr $\alpha$ klesá pod hodnotou 1 jen velmi pomalu a je tedy potřeba počítat hodnotu gama funkce ve vysokých hodnotách. Použitý software, Matlab, ale umí efektivně počítat pouze s hodnotou $\Gamma(i)$,pro $i < 171$
+Totiž podíl: $\frac{\Gamma \left(\alpha j + \beta\right)}{\Gamma \left(\alpha \left(j+1\right) + \beta\right)}$ pro malý parametr $\alpha$ klesá pod hodnotu 1 jen velmi pomalu, a je tedy potřeba počítat hodnotu gama funkce ve vysokých hodnotách. Použitý software, Matlab, ale umí efektivně počítat pouze s hodnotou $\Gamma(i)$ pro $i < 171$.
 
 \begin{figure} %\label{fracGammaPlot}
 	\caption{${\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)}, \alpha = 0.1, \beta = 0.2$}
@@ -392,7 +395,7 @@ Totiž, podíl: $\frac{\Gamma \left(\alpha j + \beta\right)}{\Gamma \left(\alpha
 	\label{fig:fracGammaPlot}
 \end{figure}
 
-Na grafu \ref{fig:fracGammaPlot} jde vidět, že podíl po sobě jdoucích koeficientů řady $z \cdot {\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)}$ ani pro téměř maximální dosažitelné parametry neklesne pod hodnotu $0,5$. To by vedlo k limitaci, že pro Mittag-Lefflerovu funkci s danými parametry bychom funkční hodnotu z mohli počítat pouze pro $z < 2$ a efektivně pouze pro $z < 1/0.7$.)
+Na grafu \ref{fig:fracGammaPlot} je vidět, že podíl po sobě jdoucích koeficientů řady $z \cdot {\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)}$ ani pro téměř maximální dosažitelné parametry neklesne pod hodnotu $0,5$. To by vedlo k limitaci, že pro Mittag-Lefflerovu funkci s danými parametry bychom funkční hodnotu $z$ mohli počítat pouze pro $z < 2$ a efektivně pouze pro $z < 1/0.7$.
 %K získání podílu dvou po sobě následujících členů řady $z \cdot {\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)}$, který bude menší než 1 je třeba aby ${1}/{z} > {\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)}$.Jak je vidět v grafu  \ref{fig:fracGammaPlot}, pokud bychom požadovali součet mocninné řady s danými parametry v bodě 2, potřebovali bychom vypočítat $n$ takové, že ${\Gamma \left(\alpha n + \beta\right)}/{\Gamma \left(\alpha \left(n+1\right) + \beta\right)} < {1}/{2}$. Výpočet s takto vysokou hodnotou $n$ je ale zřejmě daleko za schopnostmi výpočtu použitého softwaru.
 
 Laskavý čtenář by mohl poukázat na větu \ref{gamma2}, díky které by mohlo být možné upravit problém změnou pořadí operací násobení a dělení, konkrétně:
@@ -402,15 +405,15 @@ $$\frac{\Gamma\left(z - \alpha\right)}{\Gamma\left(z\right)} =
 \frac{\Gamma\left(u-\lfloor u\rfloor \right)}{\Gamma \left(z - \lfloor u\rfloor \right)} \cdot \prod_{n=0}^{\lfloor u \rfloor} \left(\frac{u-n}{z-n}\right)  $$
 
 Tato idea však funguje pouze teoreticky. Během výpočtu se provádí velké množství násobení čísel blízkých 1. Při výpočtu takového problému počítačem s omezeným počtem desetinných míst vznikají zaokrouhlovací chyby, které můžeme ilustrovat na následujícím příkladě:
-Výpočet podílu 2 funkcí jejichž funkční hodnota je vypočtena softwarem Matlab
+Výpočet podílu dvou funkcí, jejichž funkční hodnota je vypočtena softwarem Matlab
 $$\frac{\Gamma\left(170,4\right)}{\Gamma\left(170,5\right)} = 0,598367257579446.$$
 Výpočet pomocí for-cyklu a upravením pořadí násobení a dělení
  $$ \frac{\Gamma\left(170,4\right)}{\Gamma\left(170,5\right)} = 0.598016309041192.$$
- Je zřejmé, že v při tomto výpočtu se naše 2 metody řešení neshodují. Absolutní rozdíl těchto hodnot je $3.509485382540145 \cdot 10^{-3} $ a relativní rozdíl těchto vypočtených hodnot je $\approx 5.865102640704210\cdot 10^{-3}$. 
+ Je zřejmé, že při tomto výpočtu se dvě metody řešení neshodují. Absolutní rozdíl těchto hodnot je $3.509485382540145 \cdot 10^{-3} $ a relativní rozdíl těchto vypočtených hodnot je $\approx 5.865102640704210\cdot 10^{-3}$. 
  
- Tento rozpor nám ukazuje, že tato forma výpočtu pro tento problém není vhodná. V dnešní době se pro vyčíslení Mittag-Leflerovy funkce nejčastěji využívá inverzní Laplaceovy transformace. Ve zbytku této kapitoly bude nastíněna myšlenka z článku R. Garrapy \cite{Garrappa}, kde se zvídavý čtenář může o této metodě také dozvědět více.
+ Tento rozpor nám ukazuje, že tato forma výpočtu pro tento problém není vhodná. V dnešní době se pro vyčíslení Mittag-Lefflerovy funkce nejčastěji využívá inverzní Laplaceovy transformace. Ve zbytku této kapitoly bude nastíněna myšlenka z článku R. Garrapy \cite{Garrappa}, kde se zvídavý čtenář může o této metodě také dozvědět více.
 
-První krok pro tento výpočet je zavedení zobecnění Mittag-Lefflerovy funkce
+První krok pro tento výpočet je zavedení zobecnění Mittag-Lefflerovy funkce.
 \begin{defin}
 	\emph{Zobecněnou Mittag-Lefflerovou funkci} s parametry $\alpha, \beta > 0$ v bodě $\left[t,\lambda \right]$ značíme $e_{\alpha, \beta}\left(t,\lambda\right)$. A její funkční hodnotu udává vztah:
 	$$e_{\alpha, \beta}\left(t,\lambda\right) = t^{\beta - 1} E_{\alpha,\beta} \left(t^{\alpha}\lambda\right), t \in \R^{+}, \lambda \in \C.$$
@@ -427,7 +430,7 @@ Tyto vztahy definují integrální problém, který je nutné následně řešit
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Zlomková derivace a integrál}
-	V této části budou postupně definovány nejrozšířenější definice zlomkové derivace a integrálu. Následně budou diskutovány některé jejich důležité vlastnosti. V této části byla užita zejména kniha \cite{Cangpin}, ze které jsou definice také převzaty.
+	V této části budou postupně definovány nejrozšířenější definice zlomkové derivace a integrálu. Následně budou diskutovány některé jejich důležité vlastnosti. V této části byla použita zejména kniha \cite{Cangpin}, ze které jsou definice také převzaty.\\
 \textbf{Definice zlomkové derivace a integrálu}
 
 \begin{defin}
@@ -465,7 +468,7 @@ Caputova a Riemann-Liouvillova neceločíselná derivace se liší pořadím ope
 Ačkoli tedy mohou jak Caputova, tak Riemann-Liouvillova derivace existovat, nemusejí se rovnat.
 Ve zlomkovém kalkulu totiž hraje velkou roli i to, na jakém intervalu je funkce definovaná a na kterém intervalu ji derivujeme. To zároveň znamená, že neceločíselná derivace funkce v bodě $t$ závisí nejen na jejím $\delta$ okolí, ale na hodnotách na celém intervalu $\left(a, t\right)$.
 
-Existuje však přepočet mezi jak Caputovou a Riemann-Liouvillovou derivaci
+Existuje však přepočet mezi Caputovou a Riemann-Liouvillovou derivací.
 
 \begin{equation}\label{PrepocetRL->C1}
 	_{a}^{RL}D^{\alpha}_{t} y\left(t\right) =  _{a}^{C}D^{\alpha}_{t} y\left(t\right) + \sum_{k=0}^{m-1} \frac{y^{\left(k\right)}\left(a\right)\left(t-a\right)^{k-\alpha}}{\Gamma\left(k+1-\alpha\right)},
@@ -481,10 +484,10 @@ kde $\Phi \left(t\right) = \sum_{k=0}^{m-1} \frac{f^{k}\left(a\right)}{\Gamma \l
 %TODO zkontrolovat
 
 
-\textbf{Vztahy mezi neceločíselnou a celočíselnou derivací}
-Přirozenou otázkou u definice neceločíselné derivace je, co se stane v, když se řád derivace limitně blíží celému číslu.
+\textbf{Vztahy mezi neceločíselnou a celočíselnou derivací}\\
+Přirozenou otázkou u definice neceločíselné derivace je, co se stane, když se řád derivace limitně blíží celému číslu.
 
-Budeme předpokládat, že funkce $y\left(t\right)$ je dostatečně hladká a pro stupeň derivace $\alpha$, takový že $m-1<\alpha<m$, kde $m \in \N^{+}$. Pak platí, že:
+Budeme předpokládat, že funkce $y\left(t\right)$ je dostatečně hladká a pro stupeň derivace $\alpha$ takový, že $m-1<\alpha<m$, kde $m \in \N^{+}$. Pak platí, že:
 
 \begin{equation} \label{NecelociselnaxCelociselna}
 	\begin{aligned}
@@ -498,7 +501,7 @@ Budeme předpokládat, že funkce $y\left(t\right)$ je dostatečně hladká a pr
 %**** V Li se zde stala chyba a místo a napsal 0??????
 Ze vztahů \ref{NecelociselnaxCelociselna} vyplývá, že Riemann-Liouvillova derivace se v limitním případě rovná celočíselné derivaci. Toto však v obecnosti neplatí pro Caputovu derivaci.
 
-Jako příklad lze uvést funkci $y\left(t\right) =  \cos{\left(t\right)}$ na intervalu $\left\langle 0, 2\pi \right\rangle$ Pro levou a pravou Riemann-Liouvillovu nultou derivaci platí:%TODO fakt????
+Jako příklad lze uvést funkci $y\left(t\right) =  \cos{\left(t\right)}$ na intervalu $\left\langle 0, 2\pi \right\rangle$. Pro levou a pravou Riemann-Liouvillovu nultou derivaci platí:%TODO chyba texu při sázení pomlčky na konec řádku
 %\begin{equation} 
 %	\lim\limits_{\alpha \to 0^{-}} {_{0}^{RL}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)} = \lim\limits_{\alpha \to {0}^{+}} {_{0}^{RL}D^{\alpha}_{t}} f\left(t\right),
 %\end{equation}
@@ -511,7 +514,6 @@ Avšak pro levou a pravou nultou Caputovu derivaci stejné funkce platí:
 %\begin{equation}
 %	\lim\limits_{\alpha \to 0^{-}} {_{0}^{C}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)} \neq \lim\limits_{\alpha \to {0}^{+}} {_{0}^{C}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)}  - \cos{\left(0\right)} = \cos{\left(t\right)} - 1
 %\end{equation}
-
 \begin{align}
 	&L = \lim\limits_{\alpha \to 0^{-}} {_{0}^{C}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)}, \\
 	&R = \lim\limits_{\alpha \to {0}^{+}} {_{0}^{C}D^{\alpha}_{t}} \cos{\left(t\right)} = \cos{\left(t\right)}  - \cos{\left(0\right)} = \cos{\left(t\right)} - 1 \\
@@ -532,13 +534,13 @@ Jedna z velmi důležitých vlastností zlomkové derivace pro její výpočet j
 	$$
 \end{veta}
 
-Odvození věty \ref{CaputovaKomutativita} vychází z vztahu mezi neceločíselnou a celočíselnou Riemann-Liouvillovou a Caputovou derivací \eqref{NecelociselnaxCelociselna} a přepočtem z Riemann-Liouvillovou a Caputovou derivací z \eqref{PrepocetRL->C1}, kompletní odvození si lze přečíst na 9. straně~\cite{Cangpin}~.
+Odvození věty \ref{CaputovaKomutativita} vychází ze vztahu mezi neceločíselnou a celočíselnou Riemann-Liouvillovou a Caputovou derivací \eqref{NecelociselnaxCelociselna} a přepočtem z Riemann-Liouvillovou a Caputovou derivací z \eqref{PrepocetRL->C1}, kompletní odvození si lze přečíst na 9. straně~v~\cite{Cangpin}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Zlomkové diferenciální rovnice}
 %\subsection {Formulace úlohy zlomkové diferenciální rovnice}
-V této kapitole bude představena počáteční úloha Zlomkových diferenciálních rovnic \cite{Cangpin}. Následně se pro tuto úlohu zavede podmínka existence řešení a zároveň i podmínka jednoznačnosti řešení.
+V této kapitole bude představena počáteční úloha zlomkových diferenciálních rovnic \cite{Cangpin}. Následně se pro tuto úlohu zavede podmínka existence řešení a zároveň i podmínka jednoznačnosti řešení.
 \textbf{Existence a jednoznačnost řešení} \\
 Uvažujme počáteční úlohu:
 \begin{equation} \label{PocUloha}
@@ -551,13 +553,14 @@ kde $^{C}_{0}D^{\alpha}_{t} y \left(t\right)$ je Caputova derivace stupně $\alp
 
 \begin{veta}[Existence řešení počáteční úlohy zlomkové diferenciální rovnice]\label{ExistenceFDE}
 	
-	Mějme okolí $\mathcal{D}$ je takové, že $\mathcal{D} := \left[0,\mathcal{X} ^{*}\right] \times \left[u_{0}^{0} - \delta , u_{0}^{0} + \delta \right] $, přičemž $\mathcal{X}^{*}>0$ a $ \delta  > 0$. A nechť je funkce $f: \mathcal{D} \to \R$ je spojitá.
+	Mějme okolí $\mathcal{D}$ takové, že $\mathcal{D} := \left[0,\mathcal{X} ^{*}\right] \times \left[u_{0}^{0} - \delta , u_{0}^{0} + \delta \right] $, přičemž $\mathcal{X}^{*}>0$ a $ \delta  > 0$. A nechť je funkce $f: \mathcal{D} \to \R$ je spojitá.
 	
 	Pak existuje funkce $u:\left[0, \mathcal{X}\right] \to \R$, která je řešením počáteční úlohy \eqref{PocUloha}.
 \end{veta} 
+%TODO pořešit sazbu dvojteček
 
-\begin{defin}[Lipschitzovská funkce]
-	Funkce $y\left(t\right)$ se na intervalu $I = \left\langle A, B \right\rangle $ nazývá lipschitzovsky spojitá, jestliže existuje konstanta $L$, taková že:
+\begin{defin}%[Lipschitzovská funkce]
+	Funkce $y\left(t\right)$ se na intervalu $I = \left\langle A, B \right\rangle $ nazývá lipschitzovsky spojitá, jestliže existuje konstanta $L$ taková, že:
 	$$|y\left(b\right)- y\left(a\right)| \leq L \cdot |b-a| \qquad  \forall a,b \in I.$$
 \end{defin}
 
@@ -565,10 +568,11 @@ Spojitá funkce  $y\left(t,x\right)$ na okolí $\mathcal{D}$ bodu $\left[a, \eta
 $$ |y\left(t, b\right)- y\left( t, a\right)| \leq L \cdot |b-a| \qquad  \forall \left[t,b\right], \left[t,a\right]  \in \mathcal{D}. \cite{NumMetody} $$
 
 \begin{veta} [Jednoznačnost řešení počáteční úlohy zlomkové diferenciální rovnice]
-	Mějme okolí $\mathcal{D}$, takové že $\mathcal{D} := \left[0,\mathcal{X} ^{*}\right] \times \left[y_{0}^{0} - \delta , y_{0}^{0} + \delta \right] $ přičemž $\mathcal{X}^{*} > 0$ a $\delta > 0$ A nechť je funkce $f: \mathcal{D} \to \R$ ohraničená na $\mathcal{D}$ a splňuje výše zmíněnou Lipschitzovu podmínku, vzhledem k druhé proměnné. A pokud věta \ref{ExistenceFDE} platí, pak existuje právě jedna funkce $y:\left[0, \mathcal{X} \to \R\right]$, která je řešením počátečního problému \eqref{PocUloha}.
+	Mějme okolí $\mathcal{D}$ takové, že $\mathcal{D} := \left[0,\mathcal{X} ^{*}\right] \times \left[y_{0}^{0} - \delta , y_{0}^{0} + \delta \right] $ přičemž $\mathcal{X}^{*} > 0$ a $\delta > 0$. A nechť je funkce $f: \mathcal{D} \to \R$ ohraničená na $\mathcal{D}$ a splňuje výše zmíněnou Lipschitzovu podmínku vzhledem k druhé proměnné. A pokud věta \ref{ExistenceFDE} platí, pak existuje právě jedna funkce $y:\left[0, \mathcal{X} \to \R\right]$, která je řešením počátečního problému \eqref{PocUloha}.
 \end{veta}
 \subsection{Využití zlomkových diferenciálních rovnic}
 Z mnohého využití  zlomkových diferenciálních rovnic je tato kapitola zaměřena na uplatnění v oblasti mechanického kmitání. Analytické řešení takovýchto rovnic v obecnosti není jednoduché. Ve zjednodušených příkladech této kapitoly bude nastíněna možnost řešení pomocí Laplaceovy transformace.\\
+\medskip
 \textbf{Tlumený harmonický oscilátor} \label{TlumenyHarmonickyOscilator}\\
 V klasické mechanice se za harmonický oscilátor považuje těleso, jehož těžiště se pohybuje podle diferenciální rovnice:
 
@@ -582,9 +586,9 @@ Kde $m$ je hmotnost tělesa, $y\left(t\right)$ je výchylka z rovnovážné polo
 \begin{equation}
 	y\left(t\right)  = y_{max} \cdot \sin{\left(\omega t + \varphi\right)},
 \end{equation}
-Kde $\omega = \sqrt[]{\frac{k}{m}}$ je úhlová frekvence kmitání a $\varphi = \arctan{\frac{c_{0}}{c_{1}}}$. \cite{HRW} \cite{Fyzika1Kulhanek}
+kde $\omega = \sqrt[]{\frac{k}{m}}$ je úhlová frekvence kmitání a $\varphi = \arctan{\frac{c_{0}}{c_{1}}}$. \cite{HRW} \cite{Fyzika1Kulhanek}
 
-V praxi se však střetáváme s vnitřním a vnějším třením, mezi které lze zařadit například odpor vzduch. Vlivem těchto se harmonický oscilátor utlumuje. Zlomkové diferenciální rovnice umožňují tyto tlumené kmity dobře modelovat modifikací druhé derivace v diferenciální rovnici:
+V praxi se však střetáváme s vnitřním a vnějším třením, mezi které lze zařadit například odpor vzduchu. Vlivem těchto se harmonický oscilátor utlumuje. Zlomkové diferenciální rovnice umožňují tyto tlumené kmity dobře modelovat modifikací druhé derivace v diferenciální rovnici:
 \begin{equation} \label{FractionalOscilator}
 	m \cdot \frac{d^{\alpha} y}{d t^{\alpha}} + k \cdot y = 0, \qquad	1 < \alpha <2,
 \end{equation}
@@ -607,11 +611,11 @@ Dosazením \eqref{LaplaceFracDerr} do \eqref{OscilatorLaplace} a následným vyj
 	Y\left(s\right) = \frac{c_0 s^{\alpha-1} + c_{1} s^{\alpha - 2}}{s^{\alpha} + \frac{k}{m}}.
 \end{equation}
 Tato rovnice se následně řeší zpětnou Laplaceovou transformací. Využití zde nalezne Laplaceova transformace zobecněné Mittag-Lefflerovy funkce, která je:
-\begin{equation} \label{LaplaceMittag-Lefler}
+\begin{equation} \label{LaplaceMittag-Leffler}
 	\int_{0}^{\infty} e^{-st} \cdot t^{\alpha j +\beta -1} E_{\alpha,\beta}^{\left(j\right)} \left(\pm a t^{\alpha}\right) =\frac{j! s^{\alpha-\beta}}{\left(s^{\alpha} \mp a\right)^{k+1}}.
 \end{equation}
-Aplikací  rovnice \eqref{LaplaceMittag-Lefler} na \eqref{LaplaceRovniceHarmonickéhoOscilátoru} dostáváme analytické řešení zlomkové diferenciální rovnice \eqref{FractionalOscilator}
-\begin{equation}\label{LaplaceMittagLefler}
+Aplikací  rovnice \eqref{LaplaceMittag-Leffler} na \eqref{LaplaceRovniceHarmonickéhoOscilátoru} dostáváme analytické řešení zlomkové diferenciální rovnice \eqref{FractionalOscilator}
+\begin{equation}\label{LaplaceMittagLeffler}
 	y\left(t\right) = \left[ c_{0} E_{\alpha, 1}\left(-\frac{k}{m}\cdot t^{\alpha}\right) + c_{1}\cdot t \cdot E_{\alpha, 2} \left(-\frac{k}{m}\cdot t ^{\alpha}\right)\right] .
 \end{equation}
 \begin{figure} [h!]
@@ -622,84 +626,88 @@ Aplikací  rovnice \eqref{LaplaceMittag-Lefler} na \eqref{LaplaceRovniceHarmonic
 
 Pro volby $\alpha = 1.1, 1.5, 1.9$ v grafu vidíme, jak při nižším stupni derivace je tlumení výraznější, naopak při derivaci blízké $\alpha = 2$ se řešení velmi podobá netlumeným kmitům.
 
-Při studování této problematiky bylo použito knihy \cite{ChenInMechanics}, která ale v této úloze obsahuje několik chyb. A to v rovnici harmonického oscilátoru, chybě při dělení rovnice hmotností $m$ i při zápisu výsledného analytického řešení. Řešení autor dále testuje volbou počátečních podmínek $c_{1} = 0$ a parametrů $m = k = 1$, při kterých se chyby neprojeví. %Výše jsou již tyto chyby opraveny, aby byl výsledek správně.
+Při studování této problematiky bylo použito knihy \cite{ChenInMechanics}, která ale v této úloze obsahuje několik chyb. A to v rovnici harmonického oscilátoru, chybu při dělení rovnice hmotností $m$ i při zápisu výsledného analytického řešení. Řešení autor dále testuje volbou počátečních podmínek $c_{1} = 0$ a parametrů $m = k = 1$, při kterých se chyby neprojeví. %Výše jsou již tyto chyby opraveny, aby byl výsledek správně.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \textbf{Nucené kmity}\\
-Nucenými kmity je v obecnosti myšleno kmitání, které je způsobeno vnějším silovým působením a vynucují tedy kmitání o jiné frekvenci.
-Tento vnější vliv lze vymodelovat pomocí přidání funkce rychlosti, neboli první derivace polohy hmotného bodu $c\cdot y'\left(t\right)$ do rovnice \ref{HarmonicOscilator} z předchozí kapitoly.
+Nucenými kmity je v obecnosti myšleno kmitání, které je způsobeno vnějším silovým působením, a vynucují tedy kmitání o jiné frekvenci.
+Tento vnější vliv lze vymodelovat pomocí přidání funkce rychlosti neboli první derivace polohy hmotného bodu $c\cdot y'\left(t\right)$ do rovnice \eqref{HarmonicOscilator} z předchozí kapitoly.
 \begin{equation}
 	m\cdot \frac{\dx ^{2} y\left(t\right)}{\dx t^{2}} + c\cdot \frac{\dx  y\left(t\right)}{\dx t} +k \cdot y\left(t\right) = f\left(t\right).
 \end{equation}
-Jako praktický příklad této rovnice si lze představit hraní dětí na houpačce. Kde děti představují hmotný bod a jejich pohyby nohou vyvolávají vnější silové působení na oscilátor.
+Jako praktický příklad této rovnice si lze představit hraní dětí na houpačce, kde děti představují hmotný bod a jejich pohyby nohou vyvolávají vnější silové působení na oscilátor.
 
 Přístup k problému přes zlomkové diferenciální rovnice přestavuje Bagley-Torvikova rovnice
 \begin{equation}
 	m\cdot \frac{\dx ^{2} y\left(t\right)}{\dx t^{2}} + c\cdot _{0}D^{\alpha}_{t} y\left(t\right) +k \cdot y\left(t\right) = f\left(t\right). \qquad t > 0,
 \end{equation}
-kde $m$ je hmotnost tělesa, $m\cdot {\dx ^{2} y\left(t\right)}/{\dx t^{2}}$ je setrvačná síla tělesa, $c\cdot \space _{0}D^{\alpha}_{t} y\left(t\right)$ je tlumící síla představující ztráty třením, $k$ je tuhost systému, $ky\left(t\right)$ je pružná síla a $f\left(t\right)$ je funkce vnější síly působící na těleso a sytém. \cite{ChenInMechanics}
+kde $m$ je hmotnost tělesa, $m\cdot {\dx ^{2} y\left(t\right)}/{\dx t^{2}}$ je setrvačná síla tělesa, $c\cdot \space _{0}D^{\alpha}_{t} y\left(t\right)$ je tlumící síla představující ztráty třením, $k$ je tuhost systému, $ky\left(t\right)$ je pružná síla a $f\left(t\right)$ je funkce vnější síly působící na těleso a systém. \cite{ChenInMechanics}
 Tato rovnice by ale vyžadovala k jejímu modelování složitějšího algoritmu.
 
 \newpage
 \section{Numerické metody pro zlomkové diferenciální rovnice}
-Jak je možné vidět výše, zlomkové diferenciální rovnice jsou náročné řešit analyticky, proto je vcelku logické, že pro jejich výpočet se v praxi často využívají numerické výpočty. 
+Jak je možné vidět výše, zlomkové diferenciální rovnice je náročné řešit analyticky, proto je vcelku logické, že pro jejich výpočet se v praxi často využívají numerické výpočty. 
 V první podkapitole budou ještě představeny pojmy využívané v numerické matematice. Zadefinuje se numerická úloha zlomkových diferenciálních rovnic, provede se diskretizace a představí se pojmy chyb výpočtu a konvergence numerické metody.
-Ve druhé podkapitole budou ukázány 2 metody k výpočtu Caputovy derivace dané funkce, na což naváže třetí podkapitola, ve které budou ukázány tři metody které řeší počáteční úlohy zlomkových diferenciálních rovnic Caputova typu. S metodami pro výpočet řešení těchto úloh souvisí také %TODO dopsat
+Ve druhé podkapitole budou ukázány dvě metody k výpočtu Caputovy derivace dané funkce, na což naváže třetí podkapitola, ve které budou ukázány tři metody, které řeší počáteční úlohy zlomkových diferenciálních rovnic Caputova typu. S metodami pro výpočet řešení těchto úloh souvisí také problematika konvergence a chyb, což je ověřeno v čtvrté podkapitole na testovacích příkladech. %TODO dopsat
 
-V celé následující části této práce bude využívána definice Caputovy derivace, jakožto modernějšího pojetí problému. V této kapitole byly přejaty pojmy a definice z \cite{NumMetody} a \cite{Cangpin}
+V celé následující části této práce bude využívána definice Caputovy derivace jakožto modernějšího pojetí problému. V této kapitole byly přejaty pojmy a definice z \cite{NumMetody} a \cite{Cangpin}.
 
 V této kapitole budou nejprve uvedeny základní pojmy pro numerická řešení zlomkových diferenciálních rovnic a poté budou  představeny L1 a L2 metody výpočtu Caputovy derivace a~Eulerovy metody pro řešení počátečních úloh zlomkových diferenciálních rovnic.
 \subsection{Základní pojmy numerického počtu}
-Nejprve připomeneme počáteční úlohu \ref{PocUloha}, která byla již dříve důkladně rozebrána.
+Nejprve připomeneme formulaci počáteční úlohy \eqref{PocUloha}, kterou budeme numericky řešit na intervalu:
 \begin{equation*}
 	\begin{aligned}
 		^{C}_{0}D^{\alpha}_{t} y \left(t\right) &= f\left(t,y\left(t\right)\right), m-1 < \alpha < m, m \in \N, \\
 		y^{\left(j\right)} \left(0\right) &= y_{0}^{j}, j=0,1,..., m-1.
 	\end{aligned}	
 \end{equation*}
-Zatímco $y\left(t\right)$, kde $t \in I = \left\langle0, b\right\rangle$ označuje přesné řešení počáteční úlohy. Úlohou numerického počtu v počáteční úloze zlomkových diferenciálních rovnic je najít co nejlepší řešení v konečně mnoha bodech intervalu $\left(0,B\right\rangle$. 
+Hledaná funkce $y\left(t\right)$, kde $t \in I = \left\langle0, b\right\rangle$, označuje přesné řešení počáteční úlohy. Úlohou numerického počtu v počáteční úloze zlomkových diferenciálních rovnic je najít aproximaci řešení v konečně mnoha bodech na intervalu $\left(0,b\right\rangle$. 
 
-Body ve kterých řešení aproximujeme značíme $t_n$, kde $n \in \N$, $0<n\leq N$ a $t_N = B$. Přičemž vždy platí, že $t_n < t_{n+1}$ a pro účely této práce budeme navíc uvažovat, že $t_{n+1} - t_n = \tau = konst$, $ 0 \leq n \leq N$. Takovému dělení intervalu~$I$ se říká ekvidistantní. V některých aplikacích je výhodné zavést i neekvidistantní dělení intervalu~$I$, tomuto se ale v této práci nebudeme věnovat. Speciální případ je bod $t_0 = 0$, ve kterém platí počáteční podmínka $y^{\left(j\right)} \left(0\right) = y_{0}^{j}, j=0,1,..., m-1$.
+Body, ve kterých řešení aproximujeme, značíme $t_n$, kde $n \in \N$, $0<n\leq N$ a $t_N = b$. Přičemž vždy platí, že $t_n < t_{n+1}$, a pro účely této práce budeme navíc uvažovat, že $t_{n+1} - t_n = \tau = konst$, $ 0 \leq n \leq N$. Takovému dělení intervalu~$I$ se říká ekvidistantní. V některých aplikacích je výhodné zavést i neekvidistantní dělení intervalu~$I$, tomuto se ale v této práci nebudeme věnovat. Speciální případ je bod $t_0 = 0$, ve kterém platí počáteční podmínka $y^{\left(j\right)} \left(0\right) = y_{0}^{j}, j=0,1,..., m-1$.
 
-Aproximaci řešení zlomkové diferenciální rovnice v bodě $t_n$ značíme $y_n$, zatímco přesné řešení značíme $y\left(t_n\right)$. Pokud bychom chtěli najít řešení mimo naši síť $t_n$, lze buď zhustit síť $t_n$, aby pokrývala více bodů nebo je nutné použít vhodnou interpolaci, pomocí okolních bodů.
+Aproximaci řešení zlomkové diferenciální rovnice v bodě $t_n$ značíme $y_n$, zatímco přesné řešení značíme $y\left(t_n\right)$. Pokud bychom chtěli najít řešení mimo naši síť $t_n$, lze buď zhustit síť $t_n$, aby pokrývala více bodů, nebo je nutné použít vhodnou interpolaci pomocí okolních bodů.
 
-Řešení počátečního problému pro diferenciální rovnice se v numerickém počtu zjednodušuje na na problém diferenčních rovnic. V každém kroku $n$ o velikosti $\tau$ tohoto zjednodušení dochází k chybě. V numerické matematice zavádíme několik druhů chyb. %TODO zavést síť tau
+Řešení počátečního problému pro diferenciální rovnice se v numerickém počtu zjednodušuje na problém diferenčních rovnic. V každém kroku $n$ o velikosti $\tau$ tohoto zjednodušení dochází k chybě. V numerické matematice zavádíme několik druhů chyb. %TODO zavést síť tau
 
 \begin{defin}\label{GlobalniDiskretizacniChyba}
-	\textit{Globální diskretizační} chybu v kroku $n$ (zn. $\varepsilon_{n}$) vypočítáme jako:
-	$$\varepsilon_{n} = y\left(t_{n}\right) - y_{n},$$
+	\textit{Globální diskretizační chybu} v kroku $n$ (zn. $\varepsilon_{n}$) vypočítáme jako:
+	$$\varepsilon_{n} = y\left(t_{n}\right) - y_{n}.$$
 	%kde $y\left(t_{n}\right)$ je přesná analytická hodnota řešení diferenciální rovnice v bodě $t_{n}$ a $y_{n}$ je numerická aproximace řešení v bodě $t_{n}$
 \end{defin}
 
-\begin{defin}
-	\emph{Lokální diskretizační chybu} v kroku $n$ (zn. $lte_{n}$, anglicky "local truncation error") se vypočítá jako:
-	$$lte_{n} = y\left(t_{n+1}\right) -y\left(t_{n}\right) - \tau f\left(t_{n}, y\left(t_{n}\right)\right),$$
-	kde $y\left(t_{n}\right)$ a $y\left(t_{n+1}\right)$ je přesná analytická hodnota řešení diferenciální rovnice v bodě $t_{n}$ a $t_{n+1}$ a $\tau f\left(t_{n}, y\left(t_{n}\right)\right) = y_{n+1} - y_{n}$.
-\end{defin}
+%\begin{defin}
+	%\emph{Lokální diskretizační chybu} v kroku $n$ (zn. $lte_{n}$, anglicky "local truncation error") se vypočítá jako:
+	%$$lte_{n} = y\left(t_{n+1}\right) -y\left(t_{n}\right) - \tau f\left(t_{n}, y\left(t_{n}\right)\right),$$
+	%kde $y\left(t_{n}\right)$ a $y\left(t_{n+1}\right)$ je přesná analytická hodnota řešení diferenciální rovnice v bodě $t_{n}$ a $t_{n+1}$ a $\tau f\left(t_{n}, y\left(t_{n}\right)\right) = y_{n+1} - y_{n}$.
+%\end{defin} 
+%TODO lte přenechat až ke každé metodě zvlášť a zde jen zmínit, že existuje
+% lte chybu získáme za tzv lokalizačního předpokladu, tedy, že hodnoty řešení ve všech předchozích uzlech jsou přesné, je rozdíl levé a pravé strany explicitní numerické formule
 
 \begin{defin}
 	\emph{Lokální chyba} v kroku $n$ (zn. $le_{n}$, anglicky "local error") se vypočítá ze vztahu
-	$$le_{n} = y\left(t_{n+1}\right) - y_{n+1},$$
+	$$le_{n} = y\left(t_{n+1}\right) - y_{n+1}.$$
 	%$y_{n+1}$ je numerické řešení v bodě $t_{n+1}$ a $y_{n}\left(t\right)$ je analytické řešení počátečního problému \eqref{PocUloha}
 	%$$y'_{n}\left(t\right) = f\left(t,y_{n}\left(t\right)\right), \qquad y_{n}\left(t_{n}\right) = y_{n}.$$
 \end{defin}
 
+Existuje také lokální diskretizační chyba, která značí chybu v daném kroku výpočtu, za předpokladu, že všechny předchozí kroky jsou přesné. Tuto chybu u některých metod budeme definovat samostatně po představení dané metody.
+
 \begin{defin} [\emph{Řád numerické metody}]
-	Mějme konvergentní numerickou metodu, pro libovolný počet kroků $n = 0,1,2, ..., N$ na intervalu $\left\langle a, b\right\rangle$. Uvažujeme, že velikost jednoho kroku $\tau$ je konstantní a vypočítá se $\tau = \frac{b-a}{N} $. Pokud existuje konstanta $C$ nezávislá na na $\tau$, taková, že chybu $\varepsilon_{n}$ ohraničíme shora $\varepsilon_{n} \leq C\cdot \tau^{k}$.
+	Mějme konvergentní numerickou metodu pro libovolný počet kroků $n = 0,1,2, ..., N$ na intervalu $\left\langle a, b\right\rangle$. Uvažujeme, že velikost jednoho kroku $\tau$ je konstantní a vypočítá se $\tau = \frac{b-a}{N} $. Pokud existuje konstanta $C$ nezávislá na na $\tau$ taková, že chybu $\varepsilon_{n}$ ohraničíme shora $\varepsilon_{n} \leq C\cdot \tau^{k}$.
 	Pak takováto numerická metoda je řádu $k$, značíme $O\left(\tau^{k}\right)$.
 \end{defin}
 
 \begin{defin} [\emph{EOC}] \label{EOC}
-	Odhad řádu numerické metody \emph{EOC} ("Estimated Order of Convergence"), se získá jako:
+	Odhad řádu numerické metody \emph{EOC} ("Estimated Order of Convergence") se získá jako:
 	$$EOC = \log_{2}\left( \frac{\varepsilon_{h}}{\varepsilon_{h/2}} \right),$$
 	kde $\varepsilon_{h}$ je globální chyba při velikosti kroku $h$. (Viz \cite{Garrappa2})
 \end{defin}
 
 \subsection{Algoritmy pro výpočet Caputovy derivace}
-Nejjednodušší algoritmy pro výpočet Caputovy derivace jsou L1 metoda, která počítá Caputovu derivaci stupně $0<\alpha<1$ a L2 metoda, která počítá Caputovu derivaci stupně $1<\alpha<2$. V~případech kdy je potřeba vypočítat Caputovu derivaci vyššího řádu poslouží věta \ref{CaputovaKomutativita}, díky které lze problém rozložit na výpočet celočíselné derivace stupně $m$ a Caputovy derivace, která je stupně $0<\alpha<1$ v případě použití L1 metody nebo  $1<\alpha<2$ při použití L2 metody.
+Nejjednodušší algoritmy pro výpočet Caputovy derivace jsou L1 metoda, která počítá Caputovu derivaci stupně $0<\alpha<1$, a L2 metoda, která počítá Caputovu derivaci stupně $1<\alpha<2$. V~případech, kdy je potřeba vypočítat Caputovu derivaci vyššího řádu, poslouží věta \ref{CaputovaKomutativita}, díky které lze problém rozložit na výpočet celočíselné derivace stupně $m$ a Caputovy derivace, která je stupně $0<\alpha<1$ v případě použití L1 metody nebo  $1<\alpha<2$ při použití L2 metody.
 
 \begin{enumerate}[label=(\textbf{\arabic*})]
 	\item \textbf{L1 metoda}
@@ -715,7 +723,7 @@ kde $b_k$ je definované v \eqref{b_k}
 	\item \textbf{L2 metoda}
 	
 	\begin{equation}
-		\left[ ^{C}_{0}D^{\alpha}_{t} f\left(t\right)\right]_{t=t_{n}} = \sum_{k=-1}^{n} W_{k} f\left(t_{n-k}\right) + O\left(\tau^{3-\alpha}\right), \qquad1<\alpha<2,
+		\left[ ^{C}_{0}D^{\alpha}_{t} y\left(t\right)\right]_{t=t_{n}} = \sum_{k=-1}^{n} W_{k} y\left(t_{n-k}\right) + O\left(\tau^{3-\alpha}\right), \qquad1<\alpha<2,
 	\end{equation}
 kde člen $W_{k}$ je definovaný v \eqref{W_k}
 
@@ -735,7 +743,7 @@ kde člen $W_{k}$ je definovaný v \eqref{W_k}
 
 \subsection{Algoritmy pro řešení diferenciálních rovnic Caputova typu}
 
-Mezi nejzákladnější metody řešení počátečních úloh diferenciálních rovnic  patří Eulerovy metody. Stejně je tomu i u zlomkového kalkulu, pouze s malými rozdíly.
+Mezi nejzákladnější metody řešení počátečních úloh diferenciálních rovnic  patří Eulerovy metody. Zavedení těchto numerických metod je zavedeno monografií \cite{Cangpin}. Stejně je tomu i u zlomkového kalkulu, pouze s malými rozdíly.
 Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 \begin{equation} \label{b_j,n}
 	b_{j,n+1} = \frac{1}{\Gamma \left(\alpha + 1 \right)} \left[\left(n-j+1\right)^{\alpha} - \left(n-j\right)^{\alpha} \right].
@@ -743,30 +751,30 @@ Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 
 \begin{enumerate}[label=(\textbf{\arabic*})]
 	\item \textbf{Explicitní Eulerova metoda pro zlomkové diferenciální rovnice:}
-	$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximována vztahem levými obdélníkovými formulemi:
+	$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximována levými obdélníkovými formulemi:
 		\begin{equation} \label{C-PrimyEuler}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} b_{j,n+1} f\left(t_{j}, y_{j}\right),
 		\end{equation}
-	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n} \cite{Cangpin}
+	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. \cite{Cangpin}
 	
 	\item \textbf{Implicitní Eulerova metoda pro pro zlomkové diferenciální rovnice:}
 		$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximována pravými obdélníkovými formulemi:
 		\begin{equation} \label{C-NeprimyEuler}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} 	b_{j,n+1} f\left(t_{j+1}, y_{j+1}\right),
 		\end{equation}
-	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n} \cite{Cangpin}
+	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. \cite{Cangpin}
 	
 	\item \textbf{Theta metoda pro pro zlomkové diferenciální rovnice} 
 			$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximovaný váženou zlomkovou obdélníkovou formulí:
 		\begin{equation} \label{C-VazenaMetoda}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} 	b_{j,n+1} \left[\theta f\left(t_{j}, y_{j}\right) + \left(1-\theta \right)f \left(t_{j+1}, y_{j+1}\right)\right],
 		\end{equation}
-		kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}		\cite{Cangpin}
+		kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}.	\cite{Cangpin}
 \end{enumerate}
 
 Pokud bychom v metodách \eqref{C-PrimyEuler} \eqref{C-PrimyEuler} a \eqref{C-VazenaMetoda} uvažovali $\alpha = 1$ a $\theta = 0,5$, pak by se dané metody pro zlomkový kalkulus redukovaly na Explicitní Eulerovu metodu, Implicitní Eulerovu metodu a Theta metodu pro klasické obecné diferenciální rovnice.
 
-V další části bude pojednáno o řádu chyby výše zmíněných numerických metod
+V další části bude pojednáno o řádu chyby výše zmíněných numerických metod.
 
 \begin{lem} \label{LemmaOGlobChybe}
 	Nechť $\alpha,\tau,M,T > 0, k \in N: k\tau\leq T$
@@ -785,15 +793,15 @@ V další části bude pojednáno o řádu chyby výše zmíněných numerickýc
 \end{lem}
 
 \begin{veta} \label{RadEulerovyMetody}%TODO
-	Nechť funkce $y\left(t\right)$, která je řešením počátečního problému \eqref{PocUloha}, je lipschitzovská na celém intervalu $I$ problému a $f \left(t,y \left(t\right)\right)$, kde $y\left(t\right) \in C^{1}\left\langle 0, T\right\rangle$ je řešení počátečního problému které má spojité derivace,
+	Nechť funkce $y\left(t\right)$, která je řešením počátečního problému \eqref{PocUloha}, je lipschitzovská na celém intervalu $I$ problému a $f \left(t,y \left(t\right)\right)$, kde $y\left(t\right) \in C^{1}\left\langle 0, T\right\rangle$ je řešení počátečního problému, které má spojité derivace,
 	$y_{n}, \left(1 \leq n \leq N\right)$ jsou řešení Theta metody pro diferenciální rovnice \eqref{C-VazenaMetoda}. Pak platí
 	
 	\begin{equation}
 		|y\left(t_{n+1}\right) - y_{n+1}| \leq C\cdot \tau, \qquad n = 0,1, ..., N-1,
 	\end{equation} 
-	kde $C$ je pozitivní konstanta nezávislá od velikosti kroku $\tau$  a $k$. Pak řekneme že Theta metoda \eqref{C-VazenaMetoda} je tedy metoda prvního řádu $O\left(\tau\right)$. \cite{Cangpin}
+	kde $C$ je pozitivní konstanta nezávislá na velikosti kroku $\tau$  a $k$. Pak řekneme, že Theta metoda \eqref{C-VazenaMetoda} je tedy metoda prvního řádu $O\left(\tau\right)$. \cite{Cangpin}
 \end{veta}
-Provedeme důkaz věty \ref{RadEulerovyMetody} pro dostatečně malý krok $\tau$
+Provedeme důkaz věty \ref{RadEulerovyMetody}. Pro dostatečně malý krok $\tau$:
 \begin{proof}%né metody z \ref{RadEulerovyMetody}]
 	Velikost globální chyby $|\varepsilon_{n}| = |y\left(t_{n}\right) - y_{n}|$.
 	Z \eqref{C-VazenaMetoda} dostáváme
@@ -820,18 +828,18 @@ Provedeme důkaz věty \ref{RadEulerovyMetody} pro dostatečně malý krok $\tau
 	\end{equation}
 	Pro dostatečně malý krok $\tau$, pro který platí
 	\begin{equation}
-		\frac{L_{2}\tau^{\alpha}\left(1-\theta\right)}{\Gamma\left(\alpha+1\right)} < 1
+		\frac{L_{2}\tau^{\alpha}\left(1-\theta\right)}{\Gamma\left(\alpha+1\right)} < 1.
 	\end{equation}
 	(To můžeme zvolit protože $L_{2}$ je konstanta nezávislá na kroku $\tau$, $\alpha$ závisí pouze na počáteční úloze a $\theta$  je volený parametr Theta metody.)
 	Lze zavést
 	$$C = \frac{K}{1 - \frac{L_{2}\tau^{\alpha}\left(1-\theta\right)}{ \Gamma\left(\alpha+1\right)}}$$
 	\begin{equation}
-		\varepsilon_{n+1} \leq \C \tau + C \tau^{\alpha}\theta \sum_{j = 1}^{n} 	\left(n+1-j\right)^{\alpha - 1} | \varepsilon_{j}| + C \tau^{\alpha}\left(1-\theta \right) \sum_{j = 1}^{n-1} 	\left(n+1-j\right)^{\alpha - 1} | \varepsilon_{j+1}|
+		\varepsilon_{n+1} \leq C \tau + C \tau^{\alpha}\theta \sum_{j = 1}^{n} 	\left(n+1-j\right)^{\alpha - 1} | \varepsilon_{j}| + C \tau^{\alpha}\left(1-\theta \right) \sum_{j = 1}^{n-1} 	\left(n+1-j\right)^{\alpha - 1} | \varepsilon_{j+1}|
 	\end{equation}
 	Aplikací Lemma \ref{LemmaOGlobChybe} dospíváme k dokazovanému výsledku. 
 \end{proof}
 
-Jelikož parametr $\theta$ v Theta metodě \eqref{C-VazenaMetoda} zobecňuje explicitní eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \ref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
+Jelikož parametr $\theta$ v Theta metodě \eqref{C-VazenaMetoda} zobecňuje explicitní Eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \ref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
 
 \begin{veta} [O stabilitě Eulerových numerických metod] \label{StabilityOfEuler}
 	Uvažujme $y_{n}$, kde $n = 1,2,...,N+1$ řešení počátečního problému \eqref{PocUloha}, získané Theta metodou pro zlomkové diferenciální rovnice \eqref{C-VazenaMetoda}. Nechť funkce $f\left(t,y\right)$ splňuje Lipschitzovu podmínku vzhledem k druhému argumentu $y$ a s konstantní Lipschitzovou konstantou $L$ na celém intervalu $I$, na kterém je hledáno řešení. Pak Theta metoda pro zlomkové diferenciální rovnice je stabilní.
@@ -845,8 +853,7 @@ Předpokládejme splnění předpokladů věty \ref{StabilityOfEuler} pro parame
 %V této části práce bude pojednáno o numerických metod pro počítání počátečních úloh diferenciálních rovnic \eqref{C-PrimyEuler}, \eqref{C-NeprimyEuler} a \eqref{C-VazenaMetoda}. Dále bude řešena i L1 metoda pro výpočet Caputovy derivace funkce.
 
 \subsection{Testovací úlohy}
-%TODO odstavec výše uvedené numerické úlohy budeme testovat na testovacích úlohách
-Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cílem tohoto testování je ověřit jestli výše zmíněné metody skutečně aproximují řešení zlomkových diferenciálních rovnic, jestli výpočet na hustší síti má pozitivní vliv na velikost chyby, jak se chová výpočet Theta metody pro různé velikosti $\theta$ a v závěru i ověřit pomocí EOC řád konvergence numerické metody.
+Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cílem tohoto testování je ověřit, jestli výše zmíněné metody skutečně aproximují řešení zlomkových diferenciálních rovnic, jestli výpočet na hustší síti má pozitivní vliv na velikost chyby, jak se chová výpočet Theta metody pro různé velikosti $\theta$, a v závěru i ověřit pomocí EOC řád konvergence numerické metody.
 Řešení testovacích úloh bylo ověřeno pomocí softwaru Maple. 
 
 \begin{prikl}\label{TestovaciUloha1}
@@ -861,10 +868,10 @@ Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cí
 
 	Analytické řešení této diferenciální rovnice je \cite{LiYe}
 	\begin{equation}
-		y \left(t\right) = t^{2} 
+		y \left(t\right) = t^{2}.
 	\end{equation}
 
-	Získané numerické řešení pro příklad \ref{TestovaciUloha1} je zapsané v tabulce \ref{tab:tabulkaTestovacíÚloha(1)}. Z tabulky je zřejmé, že~pro tuto úlohu je nejvhodnější implicitní Eulerova metoda, která dosahuje pro menší počet kroků výrazně přesnějšího řešení, přestože všechny metody jsou stejného řádu.
+	Získané numerické řešení pro příklad \ref{TestovaciUloha1} je zapsané v tabulce \ref{tab:tabulkaTestovacíÚloha(1)}. Z tabulky je zřejmé, že~pro tuto úlohu je nejvhodnější implicitní Eulerova metoda, která dosahuje pro menší počet kroků výrazně přesnějšího řešení, přestože jsou všechny metody stejného řádu.
 
 
 	\begin{table}[h!]
@@ -933,11 +940,11 @@ Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cí
 		\end{aligned}
 	\end{equation*}
 
-	Jak bylo ukázáno výše, rovnice má analytické řešení \eqref{LaplaceMittagLefler}
+	Jak bylo ukázáno výše, rovnice má analytické řešení \eqref{LaplaceMittagLeffler}
 
 	\begin{center}
 		$	y\left(t\right) = \left[ c_{0} E_{\alpha, 1}\left(-\frac{k}{m}\cdot t^{\alpha}\right) + c_{1}\cdot t \cdot E_{\alpha, 2} \left(-\frac{k}{m}\cdot t ^{\alpha}\right)\right] .$
-	\end{center}%\begin{flushright}\eqref{LaplaceMittag-Lefler} \end{flushright}	
+	\end{center}%\begin{flushright}\eqref{LaplaceMittag-Leffler} \end{flushright}	
 
 	Kde  $E_{\alpha, \beta}\left(z\right)$ je Mittag-Lefflerova funkce.
 	A konstanty $c_{0}, c_{1}$ jsou dány počátečními  podmínkami $c_{0} = y\left(0\right) = 1, c_{1} = y'\left(0\right) = 0$ a parametry $m, k$ definovanými výše. 
@@ -946,7 +953,7 @@ Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cí
 	
 	Výsledky jsou zapsané v tabulce \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.1} pro stupeň derivace $\alpha = 1.1$, v tabulce \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} pro stupeň derivace $\alpha = 1.5$ a v tabulce \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro stupeň derivace $\alpha = 1.9$. 
 	
-	V tabulkách \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} a \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro příklad  po řadě $\alpha = 1.5$ a $\alpha 1.9$  je vidět přesný odhad pro řád numerických metod (připomeňme, že Theta metoda s parametrem $\theta$, pro $\theta = 0$ a  $\theta = 1$ je shodná s implicitní Eulerovou metodou a explicitní Eulerovou metodou). Pro tabulku s derivací $\alpha =1.1$ a parametrem $\theta = 0.7$ a $\theta = 1$ vychází vyšší odhad řádu konvergence EOC, což může být způsobenou specifikem příkladu a zvolených parametrů nebo pro vyšší počet kroků $N$ i zaokrouhlovacími chybami.
+	V tabulkách \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.5} a \ref{tab:tabulkaTestovacíÚloha(2),alpha=1.9} pro příklad  po řadě $\alpha = 1.5$ a $\alpha = 1.9$  je vidět přesný odhad pro řád numerických metod (připomeňme, že Theta metoda s parametrem $\theta$ pro $\theta = 0$ a  $\theta = 1$ je shodná s implicitní Eulerovou metodou a explicitní Eulerovou metodou). Pro tabulku s derivací $\alpha =1.1$ a parametrem $\theta = 0.7$ a $\theta = 1$ vychází vyšší odhad řádu konvergence EOC, což může být způsobeno specifikem příkladu a zvolených parametrů nebo pro vyšší počet kroků $N$ i zaokrouhlovacími chybami.
 
 	\begin{table}[h!]
 	\centering
@@ -984,7 +991,7 @@ Výše uvedené testovací úlohy budeme testovat na testovacích úlohách. Cí
 
 	\begin{table}[h!]
 		\centering
-		\caption{Numerické řešení testovací úlohy (2) pro $\alpha = 1.5$} a rovnoměrné dělení na N kroků
+		\caption{Numerické řešení testovací úlohy (2) pro $\alpha = 1.5$ a rovnoměrné dělení na N kroků}
 		\label{tab:tabulkaTestovacíÚloha(2),alpha=1.5}
 	\begin{tabular}{|c||cc|cc|cc|cc|}
 		\hline
@@ -1059,7 +1066,7 @@ Uvažujme funkci
 \begin{equation} \label{TestUlohaCaputovaDerivace}
 	y\left(t\right) = t^{3} - 3t^{3} + 2t, \qquad t \in \left\langle 0, 2\right\rangle.
 \end{equation}
-Pro tuto funkci \eqref{TestUlohaCaputovaDerivace} je úkolem vypočítat její Caputovu derivaci stupně $0.3, 0.5$ a $0.8$ v bodě $t = 2$
+Pro tuto funkci \eqref{TestUlohaCaputovaDerivace} je úkolem vypočítat její Caputovu derivaci stupně $0.3, 0.5$ a $0.8$ v bodě $t = 2$.
 %TODO přeformulovat
 
 K nalezení analytického řešení pro tuto úlohu byl použit software Maple. Hodnota funkce v~bodě $t = 2$ byla vyčíslena na 20 platných dekadických cifer. Hledanou funkci nazveme funkcí $Y$, přičemž spodní index značí stupeň derivace. $Y_{0.3}\left(t\right)$, $Y_{0.5}\left(t\right)$, $Y_{0.8}\left(t\right)$ tedy po řadě značí derivaci $0.3$ stupně, $0.5$ stupně a $0,8$ stupně.
@@ -1133,23 +1140,23 @@ K nalezení analytického řešení pro tuto úlohu byl použit software Maple. 
 
 \newpage
 \section{Závěr}
-V této bakalářské práci bylo cílem nastudovat problematiku zlomkových diferenciálních rovnic, nastudovat vlastnosti numerických metod a realizace vybraných numerických metod. Práce je členěna do tří částí. 
+V této bakalářské práci bylo cílem nastudovat problematiku zlomkových diferenciálních rovnic, nastudovat vlastnosti numerických metod a realizovat vybrané numerické metody. Práce je členěna do tří částí. 
 
 V kapitolách (2) a (3) jsou zavedeny základní pojmy potřebné pro neceločíselný kalkulus, zaveden neceločíselný  Riemann-Liouvillův integrál a Caputova derivace. 
 
 Na tuto část poté navazuje představení počáteční úlohy zlomkových diferenciálních rovnic v kapitole (4) a ukázka využití zlomkových diferenciálních rovnic v kapitole (5). 
 
-Ve třetí části jsou představeny Eulerovy metody numerického řešení zlomkových diferenciálních rovnic a jejich vlastností v kapitole (6). V realizaci vybraných metod byly zvoleny metoda L1 pro výpočet Caputovy derivace a Eulerovy metody pro řešení počátečního problému. Správnost kódů na testovacích úlohách bylo následně provedeno v kapitole (7), byl sledován vývoj chyby v závislosti na počtu kroků $N$ a byl vypočítán odhad řádu konvergence EOC.
+Ve třetí části jsou představeny Eulerovy metody numerického řešení zlomkových diferenciálních rovnic a jejich vlastností v kapitole (6). V realizaci vybraných metod byly zvoleny metoda L1 pro výpočet Caputovy derivace a Eulerovy metody pro řešení počátečního problému. Správnost kódů na testovacích úlohách byla následně provedena v kapitole (3.4), byl sledován vývoj chyby v závislosti na počtu kroků $N$ a byl vypočítán odhad řádu konvergence EOC.
 
-Oblast diferenciálních rovnic je obsáhlým a stále se rozvíjejícím odvětvím. Nebylo tedy zdaleka možné popsat vše a zůstalo mnoho možností práci rozvinout. Zejména by se mohlo přikročit k upravení kódu v softwaru Matlab pro řešení soustav diferenciálních rovnic nebo rozšíření souboru metod o řešení vícekrokovými metodami nebo o metody vyššího řádu konvergence.
-
+Oblast diferenciálních rovnic je obsáhlým a stále se rozvíjejícím odvětvím. Nebylo tedy zdaleka možné popsat vše a zůstalo mnoho možností práci rozvinout. Zejména by se mohlo přikročit k upravení kódu v softwaru Matlab pro řešení soustav diferenciálních rovnic nebo k rozšíření souboru metod o řešení vícekrokovými metodami nebo o metody vyššího řádu konvergence.
+%TODO podle současného číslování
 
 \newpage
 \newpage
 \begin{thebibliography}{12}
 \bibitem{Cangpin} LI, Changpin. {\em Numerical Methods for Fractional Calculus.} Boca Raton: CRC Press, 2015, xviii, 281 stran : grafy. ISBN 978-1-4822-5380-1.
 	
-\bibitem{NumMetody} ČERMÁK, Libor. Numerické metody [online]. Brno: Vysoké učení techniké v Brně, 2020 [cit. 2023-05-19]. Dostupné z: https://mathonline.fme.vutbr.cz/Numericke-metody-II/sc-1246-sr-1-a-263/default.aspx	
+\bibitem{NumMetody} ČERMÁK, Libor. Numerické metody [online]. Brno: Vysoké učení technické v Brně, 2020 [cit. 2023-05-19]. Dostupné z: https://mathonline.fme.vutbr.cz/Numericke-metody-II/sc-1246-sr-1-a-263/default.aspx	
 		
 %\bibitem{CerNech} -
 %Čermák, J., Nechvátal, L., {\em On a problem of linearized stability for fractional difference equations}, Nonlinear Dyn. {\bf 104} (2021), 1253--1267.
