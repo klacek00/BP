@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  7 MAY 2024 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  8 MAY 2024 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1059,13 +1059,13 @@ nput line 623.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21] [22]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 760--762
+Overfull \hbox (8.17236pt too wide) in paragraph at lines 765--767
 []\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
  di-fe-ren-ci-ální rov-nice: $[][]$
  []
 
 [23]
-Overfull \hbox (16.77112pt too wide) detected at line 828
+Overfull \hbox (16.77112pt too wide) detected at line 833
 [][][][][]
  []
 
@@ -1074,7 +1074,7 @@ Overfull \hbox (16.77112pt too wide) detected at line 828
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 962--990
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 967--995
  [][] 
  []
 
@@ -1082,7 +1082,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 962--990
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 996--1024
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1001--1029
  [][] 
  []
 
@@ -1090,7 +1090,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 996--1024
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1030--1058
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1035--1063
  [][] 
  []
 
@@ -1098,13 +1098,13 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 1030--1058
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26] [27] [28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1182--1183
+Underfull \hbox (badness 1655) in paragraph at lines 1187--1188
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1182--1183
+Underfull \hbox (badness 1102) in paragraph at lines 1187--1188
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
@@ -1139,9 +1139,9 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2294261 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2293904 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
+ 549 PDF objects out of 1000 (max. 8388607)
  142 named destinations out of 1000 (max. 500000)
  63623 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -743,7 +743,7 @@ kde člen $W_{k}$ je definovaný v \eqref{W_k}
 
 \subsection{Algoritmy pro řešení diferenciálních rovnic Caputova typu}
 
-Mezi nejzákladnější metody řešení počátečních úloh diferenciálních rovnic  patří Eulerovy metody. Zavedení těchto numerických metod je zavedeno monografií \cite{Cangpin}. Stejně je tomu i u zlomkového kalkulu, pouze s malými rozdíly.
+Mezi nejzákladnější metody řešení počátečních úloh diferenciálních rovnic patří Eulerovy metody. Stejně je tomu i u zlomkového kalkulu, pouze s malými rozdíly. Při zavedení těchto numerických metod je čerpáno z monografie \cite{Cangpin}.
 Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 \begin{equation} \label{b_j,n}
 	b_{j,n+1} = \frac{1}{\Gamma \left(\alpha + 1 \right)} \left[\left(n-j+1\right)^{\alpha} - \left(n-j\right)^{\alpha} \right].
@@ -755,21 +755,26 @@ Pro všechny Eulerovy metody využíváme dvouparametrický člen:
 		\begin{equation} \label{C-PrimyEuler}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} b_{j,n+1} f\left(t_{j}, y_{j}\right),
 		\end{equation}
-	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. \cite{Cangpin}
+	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. %\cite{Cangpin}
+	
+	Pro tuto metodu lze zavést lokální diskretizační chybu v bodě $t_{n+1}$, tak že:
+	\begin{equation*}
+		lte_{n+1} = u\left(t_{n+1}\right) - \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} - \tau^{\alpha} \sum_{j = 0}^{n} b_{j,n+1} f\left(t_{j}, y\left(t_{j}\right)\right).
+	\end{equation*}
 	
 	\item \textbf{Implicitní Eulerova metoda pro pro zlomkové diferenciální rovnice:}
 		$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximována pravými obdélníkovými formulemi:
 		\begin{equation} \label{C-NeprimyEuler}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} 	b_{j,n+1} f\left(t_{j+1}, y_{j+1}\right),
 		\end{equation}
-	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. \cite{Cangpin}
+	kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}. %\cite{Cangpin}
 	
 	\item \textbf{Theta metoda pro pro zlomkové diferenciální rovnice} 
 			$\left[_{0}D_{t}^{-\alpha} f\left(t,y\left(t\right)\right)\right]_{t=t_{n+1}}$ je aproximovaný váženou zlomkovou obdélníkovou formulí:
 		\begin{equation} \label{C-VazenaMetoda}
 			y_{n+1} = \sum_{j=0}^{m-1} \frac{t_{n+1}^{j}}{j!} y_{0}^{(j)} + \tau^{\alpha} \sum_{j = 0}^{n} 	b_{j,n+1} \left[\theta f\left(t_{j}, y_{j}\right) + \left(1-\theta \right)f \left(t_{j+1}, y_{j+1}\right)\right],
 		\end{equation}
-		kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}.	\cite{Cangpin}
+		kde $b_{j, n+1}$ je definováno vztahem \eqref{b_j,n}.	%\cite{Cangpin}
 \end{enumerate}
 
 Pokud bychom v metodách \eqref{C-PrimyEuler} \eqref{C-PrimyEuler} a \eqref{C-VazenaMetoda} uvažovali $\alpha = 1$ a $\theta = 0,5$, pak by se dané metody pro zlomkový kalkulus redukovaly na Explicitní Eulerovu metodu, Implicitní Eulerovu metodu a Theta metodu pro klasické obecné diferenciální rovnice.
@@ -839,7 +844,7 @@ Provedeme důkaz věty \ref{RadEulerovyMetody}. Pro dostatečně malý krok $\ta
 	Aplikací Lemma \ref{LemmaOGlobChybe} dospíváme k dokazovanému výsledku. 
 \end{proof}
 
-Jelikož parametr $\theta$ v Theta metodě \eqref{C-VazenaMetoda} zobecňuje explicitní Eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \ref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
+Jelikož parametr $\theta$ v Theta metodě \eqref{C-VazenaMetoda} zobecňuje explicitní Eulerovu metodu \eqref{C-PrimyEuler} i implicitní eulerovu metodu \eqref{C-NeprimyEuler} díky volbě $\theta = 1$ a $\theta = 0$, pak také platí, že explicitní Eulerova metoda \eqref{C-PrimyEuler} a implicitní Eulerova metoda \eqref{C-NeprimyEuler} jsou z \eqref{RadEulerovyMetody} také metody prvního řádu $O\left(\tau\right)$.
 
 \begin{veta} [O stabilitě Eulerových numerických metod] \label{StabilityOfEuler}
 	Uvažujme $y_{n}$, kde $n = 1,2,...,N+1$ řešení počátečního problému \eqref{PocUloha}, získané Theta metodou pro zlomkové diferenciální rovnice \eqref{C-VazenaMetoda}. Nechť funkce $f\left(t,y\right)$ splňuje Lipschitzovu podmínku vzhledem k druhému argumentu $y$ a s konstantní Lipschitzovou konstantou $L$ na celém intervalu $I$, na kterém je hledáno řešení. Pak Theta metoda pro zlomkové diferenciální rovnice je stabilní.
