@@ -1,8 +1,6 @@
 %% L1 metoda vypoctu Caputovy derivace
 function [t,y] = L1Caputo(y_der,alpha,a,b,N)
-%   Funkce resici zlomkovou diferencialni rovnici implicitni Eulerovou metodou 
-%   Resi rovnici typu y_der = f(t,y), kde y0=y(0) je vektor počátečních
-%   podmínek
+%   Funkce resici zlomkovou derivaci funkce y(t) radu alpha
 %   alpha - stupeň derivace mezi 0 a 1
 %   a,b   - hranice intervalu funkce ktera se derivuje
 %   N     - pocet kroku

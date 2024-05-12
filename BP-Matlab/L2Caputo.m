@@ -1,12 +1,15 @@
+%% L2 metoda vypoctu Caputovy derivace
 function [t,y] = L2Caputo(y_der,alpha,a,b,N)
+%   Funkce resici zlomkovou derivaci funkce y(t) radu alpha
+%   alpha - stupeň derivace mezi 1 a 2
+%   a,b   - hranice intervalu funkce ktera se derivuje
+%   N     - pocet kroku
 
-% 1 < alpha < 2 
 format long;
 t = linspace(a,b,N+1);
 
 y = zeros(N,1);
 y(1) = 0;
-%y(2) = 0;
 tau = t(2)-t(1);
 
 % % % W = zeros(N+2,1);
@@ -55,5 +58,6 @@ for n=2:(N-1)%i=0:k-1, ale matlab čísluje od 1
         y(n+1) = y(n+1) + (W.*y_der(t(n-k+1)));
     end
 end
-t = t(1:end-1);
+t = t(2:end);
+y = y(1:end);
 end
