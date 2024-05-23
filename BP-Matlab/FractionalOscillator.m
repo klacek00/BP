@@ -31,10 +31,10 @@ b=10;
 n = 10; %počet N sloupců pro které provádíme výpočet
 
 yend = zeros(11,n);
-% theta = 0.5
+theta = 0.7
 for i=1:11
     N = 50;
-    theta =  0.1.*(i-1)
+    %theta =  0.1.*(i-1)
 for j=1:n
     N=N.*2
     tic

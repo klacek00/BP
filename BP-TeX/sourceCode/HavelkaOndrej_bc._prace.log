@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  12 MAY 2024 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  22 MAY 2024 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,85 +676,85 @@ Package geometry Warning: Over-specification in `h'-direction.
     `width' (455.24408pt) is ignored.
 
 \c@veta=\count314
-LaTeX Info: Redefining \oldstylenums on input line 112.
+LaTeX Info: Redefining \oldstylenums on input line 114.
 LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on inpu
-t line 112.
+t line 114.
 (D:\programs\TeX\Instal\tex/latex/xcharter\t1xcharter-tlf.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
 TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 112.
+(Font)              scaled to size 11.64001pt on input line 114.
 
 (HavelkaOndrej_bc._prace.aux)
 \openout1 = `HavelkaOndrej_bc._prace.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 112.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 114.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line
- 112.
+ 114.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-112.
+114.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 112.
+ 114.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 112.
+e 114.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 \c@mv@tabular=\count315
 \c@mv@boldtabular=\count316
-LaTeX Info: Command `\dddot' is already robust on input line 112.
-LaTeX Info: Command `\ddddot' is already robust on input line 112.
-LaTeX Info: Redefining \microtypecontext on input line 112.
+LaTeX Info: Command `\dddot' is already robust on input line 114.
+LaTeX Info: Command `\ddddot' is already robust on input line 114.
+LaTeX Info: Redefining \microtypecontext on input line 114.
 
 
-Package microtype Warning: Unable to apply patch `item' on input line 112.
+Package microtype Warning: Unable to apply patch `item' on input line 114.
 
-Package microtype Info: Applying patch `toc' on input line 112.
-Package microtype Info: Applying patch `eqnum' on input line 112.
-Package microtype Info: Applying patch `footnote' on input line 112.
-Package microtype Info: Applying patch `verbatim' on input line 112.
+Package microtype Info: Applying patch `toc' on input line 114.
+Package microtype Info: Applying patch `eqnum' on input line 114.
+Package microtype Info: Applying patch `footnote' on input line 114.
+Package microtype Info: Applying patch `verbatim' on input line 114.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 112.
+LaTeX Info: Redefining \showhyphens on input line 114.
 Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: Adjustment of interword spacing enabled.
@@ -769,7 +769,7 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 112.
+Package hyperref Info: Link coloring OFF on input line 114.
 
 (HavelkaOndrej_bc._prace.out) (HavelkaOndrej_bc._prace.out)
 \@outlinefile=\write4
@@ -834,78 +834,78 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <VUT.pdf, id=55, 290.21623pt x 100.99733pt>
 File: VUT.pdf Graphic file (type pdf)
 <use VUT.pdf>
-Package pdftex.def Info: VUT.pdf  used on input line 115.
+Package pdftex.def Info: VUT.pdf  used on input line 117.
 (pdftex.def)             Requested size: 113.81102pt x 39.60762pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.53601pt on input line 115.
+(Font)              scaled to size 8.53601pt on input line 117.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.40201pt on input line 115.
+(Font)              scaled to size 6.40201pt on input line 117.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-115.
+117.
 (D:\programs\TeX\Instal\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-115.
+117.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-115.
+117.
 
 (D:\programs\TeX\Instal\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.24002pt on input line 115.
+(Font)              scaled to size 9.24002pt on input line 117.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.93002pt on input line 115.
+(Font)              scaled to size 6.93002pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 11
-5.
+7.
 
 (D:\programs\TeX\Instal\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 115
+LaTeX Font Info:    Trying to load font information for U+msa on input line 117
 .
 
 (D:\programs\TeX\Instal\tex/latex/amsfonts\umsa.fd
@@ -914,7 +914,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (D:\programs\TeX\Instal\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 115
+LaTeX Font Info:    Trying to load font information for U+msb on input line 117
 .
 
 (D:\programs\TeX\Instal\tex/latex/amsfonts\umsb.fd
@@ -924,7 +924,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+pag on input line 11
-6.
+8.
 
 (D:\programs\TeX\Instal\tex/latex/psnfss\t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
@@ -934,16 +934,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 13.968pt on input line 116.
+(Font)              scaled to size 13.968pt on input line 118.
 <FSI.pdf, id=56, 252.10085pt x 99.58505pt>
 File: FSI.pdf Graphic file (type pdf)
 <use FSI.pdf>
-Package pdftex.def Info: FSI.pdf  used on input line 119.
+Package pdftex.def Info: FSI.pdf  used on input line 121.
 (pdftex.def)             Requested size: 113.81102pt x 44.95872pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.6215pt on input line 124.
+(Font)              scaled to size 10.6215pt on input line 126.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
 
  []
 
@@ -960,126 +960,124 @@ ed
 File: zav_prace__6a47feaede907e7e33a4b03780487b63.pdf Graphic file (type pdf)
 <use zav_prace__6a47feaede907e7e33a4b03780487b63.pdf>
 Package pdftex.def Info: zav_prace__6a47feaede907e7e33a4b03780487b63.pdf  used 
-on input line 150.
+on input line 152.
 (pdftex.def)             Requested size: 483.69687pt x 684.08469pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 150--152
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 152--154
 [][] 
  []
 
 [3{D:/programs/TeX/Instal/fonts/enc/dvips/xcharter/xch_rydp4l.enc} <./zav_prace
 __6a47feaede907e7e33a4b03780487b63.pdf>]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 11.64001pt on input line 155.
+(Font)              scaled to size 11.64001pt on input line 157.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 11.64001pt on input line 173.
+(Font)              scaled to size 11.64001pt on input line 175.
  [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 229.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 231.
 
 (HavelkaOndrej_bc._prace.toc)
 \tf@toc=\write5
 \openout5 = `HavelkaOndrej_bc._prace.toc'.
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.6215pt on input line 230.
+(Font)              scaled to size 10.6215pt on input line 232.
  [10]
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 249.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 251.
  [11]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.6215pt on input line 286.
+(Font)              scaled to size 10.6215pt on input line 288.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 286.
+(Font)              scaled to size 7.76001pt on input line 288.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.917pt on input line 286.
+(Font)              scaled to size 5.917pt on input line 288.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 11.49753pt on input line 286.
+(Font)              scaled to size 11.49753pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 286.
+(Font)              scaled to size 8.40002pt on input line 288.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.40501pt on input line 286.
+(Font)              scaled to size 6.40501pt on input line 288.
 <Gamma+.jpg, id=193, 1927.2pt x 958.58125pt>
 File: Gamma+.jpg Graphic file (type jpg)
 <use Gamma+.jpg>
-Package pdftex.def Info: Gamma+.jpg  used on input line 288.
+Package pdftex.def Info: Gamma+.jpg  used on input line 290.
 (pdftex.def)             Requested size: 483.69687pt x 240.58084pt.
  [12 <./Gamma+.jpg>] [13]
-<fracGammaPlot.png, id=219, 1163.0652pt x 620.5584pt>
+<fracGammaPlot.png, id=221, 1163.0652pt x 620.5584pt>
 File: fracGammaPlot.png Graphic file (type png)
 <use fracGammaPlot.png>
-Package pdftex.def Info: fracGammaPlot.png  used on input line 400.
+Package pdftex.def Info: fracGammaPlot.png  used on input line 402.
 (pdftex.def)             Requested size: 483.69687pt x 258.07613pt.
  [14] [15 <./fracGammaPlot.png (PNG copy)>] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
 [18]
-<FractionalOscillator_AnalyticalSolution.pdf, id=292, 649.42625pt x 355.3275pt>
+<FractionalOscillator_AnalyticalSolution.pdf, id=291, 649.42625pt x 355.3275pt>
 
 File: FractionalOscillator_AnalyticalSolution.pdf Graphic file (type pdf)
 <use FractionalOscillator_AnalyticalSolution.pdf>
 Package pdftex.def Info: FractionalOscillator_AnalyticalSolution.pdf  used on i
-nput line 640.
+nput line 641.
 (pdftex.def)             Requested size: 483.69687pt x 264.65695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21] [22]
-Overfull \hbox (8.17236pt too wide) in paragraph at lines 784--786
-[]\T1/XCharter-TLF/b/n/12 (-20) Implicitní Eu-le-rova me-toda pro pro zlom-kové
- di-fe-ren-ci-ální rov-nice: $[][]$
- []
-
-[23]
-Overfull \hbox (16.77112pt too wide) detected at line 852
-[][][][][]
+[19] [20 <./FractionalOscillator_AnalyticalSolution.pdf>] [21] [22] [23]
+Overfull \hbox (16.77112pt too wide) detected at line 854
+[][]
  []
 
 [24]
+Underfull \hbox (badness 10000) in paragraph at lines 868--870
+
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 986--1014
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 990--1018
  [][] 
  []
 
@@ -1087,7 +1085,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 986--1014
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1020--1048
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1024--1052
  [][] 
  []
 
@@ -1095,7 +1093,7 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 1020--1048
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.5367pt too wide) in paragraph at lines 1054--1082
+Overfull \hbox (23.5367pt too wide) in paragraph at lines 1058--1086
  [][] 
  []
 
@@ -1103,18 +1101,34 @@ Overfull \hbox (23.5367pt too wide) in paragraph at lines 1054--1082
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26] [27] [28] [29]
-Underfull \hbox (badness 1655) in paragraph at lines 1206--1207
+Underfull \hbox (badness 1655) in paragraph at lines 1216--1217
 []\T1/XCharter-TLF/m/n/12 (+20) LI, Chan-g-pin, An CHEN a Junije YE. Nu-me-ri-c
 al ap-pro-a-ches to fracti-o-nal cal-cu-lus
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1206--1207
+Underfull \hbox (badness 1102) in paragraph at lines 1216--1217
 \T1/XCharter-TLF/m/n/12 (+20) and fracti-o-nal or-di-nary di-f-fe-ren-tial equa
 tion. J. Com-put. Phy-s-ics. 230. 3352-3368.
  []
 
-[30] 
+[30]
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
+ut line 1229.
+ (D:\programs\TeX\Instal\tex/latex/xcharter\ts1xcharter-tlf.fd
+File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter
+-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 11.64001pt on input line 1229.
+Package microtype Info: Character `textbardbl ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textcelsius ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+ [31{D:/programs/TeX/Instal/fonts/enc/dvips/xcharter/xch1_co4ru4.enc}]
+
 enddocument/afterlastpage: lastpage setting LastPage.
 (HavelkaOndrej_bc._prace.aux)
  ***********
@@ -1126,13 +1140,13 @@ Package rerunfilecheck Info: File `HavelkaOndrej_bc._prace.out' has not changed
 (rerunfilecheck)             Checksum: 94C621DA0616C0B575CE52D6E1970C2D;2625.
  ) 
 Here is how much of TeX's memory you used:
- 20024 strings out of 474386
- 318853 string characters out of 5750702
- 1993496 words of memory out of 5000000
- 41610 multiletter control sequences out of 15000+600000
- 708669 words of font info for 330 fonts, out of 8000000 for 9000
+ 20070 strings out of 474386
+ 319941 string characters out of 5750702
+ 1992496 words of memory out of 5000000
+ 41646 multiletter control sequences out of 15000+600000
+ 709793 words of font info for 337 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,117p,990b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,117p,990b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/programs/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI.pfb><D:/prog
 rams/TeX/Instal/fonts/type1/public/newtx/LibertineMathMI7.pfb><D:/programs/TeX/
 Instal/fonts/type1/public/newtx/LibertineMathRM.pfb><D:/programs/TeX/Instal/fon
@@ -1144,9 +1158,9 @@ ms/TeX/Instal/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/programs/TeX/Instal/fo
 nts/type1/public/newtx/txmiaX.pfb><D:/programs/TeX/Instal/fonts/type1/public/ne
 wtx/txsys.pfb><D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagd8a.pfb>
 <D:/programs/TeX/Instal/fonts/type1/public/urw-base35/uagk8a.pfb>
-Output written on HavelkaOndrej_bc._prace.pdf (30 pages, 2294139 bytes).
+Output written on HavelkaOndrej_bc._prace.pdf (31 pages, 2299513 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 63623 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 67719 words of extra memory for PDF output out of 74296 (max. 10000000)
 

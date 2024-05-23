@@ -1,5 +1,13 @@
 %% Testovaci uloha Garrappa
-
+%   Řešíme počáteční probém y_der = f(t,y)
+%   y0=y(0) - vektor počátečních podmínek
+%   alpha - stupeň derivace funkce y
+%   a,b   - hranice intervalu funkce, na kterem resime diferencialni
+%   N     - počet krokův řešení
+%   yend~ - matice, ve kteréjsou řešení Exlpicitní eulrovou v bodě b
+%   yerr~ - chybařešení danou metodou při daném počtu kroků
+%   EOC   - odhad řádu konvergence, pro dané kroky
+%   ysol  - analytické řešení rovnice
 
 alpha = 0.5;
 al = alpha;
@@ -16,8 +24,8 @@ repete = 5;
 yend = zeros(repete,1);
 for i=1:repete
     N = N.*2
-    [t,y1] = FractionalBackwardEuler(y_der,a,b,N,alpha,y0);
-    plot(t,y1,'DisplayName',sprintf('Backward N = %d', N));
+    [t,y1] = FractionalForwardEuler(y_der,a,b,N,alpha,y0);
+    plot(t,y1,'DisplayName',sprintf('Forward N = %d', N));
     yend(i) = y1(end);
 end
 sol = ysol(t(end));

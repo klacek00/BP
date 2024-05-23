@@ -1,11 +1,11 @@
 %% Testovací úloha pro Eulerovy metody 
-%   Řešíme počáteční probém y_der = f(t,u)
+%   Řešíme počáteční probém y_der = f(t,y)
 %   y0=y(0) - vektor počátečních podmínek
 %   alpha - stupeň derivace funkce y
 %   a,b   - hranice intervalu funkce, na kterem resime diferencialni
 %   N     - počet krokův řešení
 %   theta - váhový parametr pro váženou metodu
-%   yres~ - matice, ve které první řádek jsou řešení Exlicitní eulrovou
+%   yres~ - matice, ve které první řádek jsou řešení Explicitní eulrovou
 %   metodou
 %           druhý řádek řešený Implicitní Eulerovou metodou
 %           třetí řádek řášený váženou metodou s parametrem theta
@@ -43,7 +43,8 @@ yerr10 = zeros(3, 5);
 
 for n = 1:5 
     N = N*10 %10násobné zvýšení počtu kroků oproti předchozí iteraci
-
+    
+    tic
     [t,y] = FractionalForwardEuler(y_der,a,b,N,alpha,y0);
     toc
     plot(t,y,'DisplayName',sprintf('Forward N = %d', N));

@@ -10,7 +10,7 @@
 %   repete- počet iterací, v kolika aproximujeme řešení
 clc, clear;
 y_der =@(t) 2.*t - 3.*t.^2 + t.^3;
-alpha = 0.5;
+alpha = 0.7;
 a = 0;
 b = 2;
 

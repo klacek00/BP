@@ -1,4 +1,11 @@
-%Testovací metody euler uloha2
+%% Testovací metody euler uloha2
+%   Řešíme počáteční probém y_der = f(t,y)
+%   y0=y(0) - vektor počátečních podmínek
+%   alpha - stupeň derivace funkce y
+%   a,b   - hranice intervalu funkce, na kterem resime diferencialni
+%   N     - počet krokův řešení
+%   yerr~ - chybařešení danou metodou při daném počtu kroků
+
 format long;
 hold on;
 y_der = @(t,y) -y;

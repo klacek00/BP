@@ -10,14 +10,13 @@
 %   repete- počet iterací, v kolika aproximujeme řešení
 clc, clear;
 y_der =@(t) 2.*t - 3.*t.^2 + t.^3;
-%y_der =@(t) 3.*t.^3;
 alpha = 1.5;
 a = 0;
 b = 2;
 
 repete = 4;
 yend = zeros(repete+1,1);
-yendvalue = 3.1915382432114614235;  %3.1915382432114614235
+yendvalue = 3.1915382432114614235;
 hold on;
 for i=0:repete
     N = 100.*(2.^i)
